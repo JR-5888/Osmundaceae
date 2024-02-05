@@ -1,0 +1,22 @@
+macro = ;
+var :
+crepl
+;
+hold 1000 / 1000 ;
+tgr - . ;
+
+resample repl 10 boot freq allow 
+[
+	set crepl ++ ;
+	k0 ;
+	mult 10 ;
+	tgr ='crepl' . ;
+	tv > . ;
+]
+;
+
+tv < ; 
+tgr ; 
+
+macro - ;
+p/;
