@@ -2,10 +2,11 @@ macro = ;
 var :
 crepl
 ;
-hold 1000 / 1000 ;
+hold 1500 / 1500 ;
 tgr - . ;
 
-resample repl 10 boot freq allow 
+set crepl 0 ;
+resample repl 100 boot freq allow 
 [
 	set crepl ++ ;
 	k0 ;
@@ -17,6 +18,25 @@ resample repl 10 boot freq allow
 
 tv < ; 
 tgr ; 
+collap-;
+
+/* unstable within replicates, seeking for improvements in the strict consensus tree within each replicate */
+loop 1 'crepl'
+	pcrprune :50 {#1}/\ >0 ;
+	stop
+
+
+	/* unstable amongst replicates but seeking for improvements in the majority consensus tree */
+	pcrprune :50 (majority 50) ./\ >1 ; 
+
+
+
+set crepl ++ ;
+tgr ='crepl' . ;
+agr =2 {0} {1} ;
+
+
+prupdn 2 3 :50 * ./ ;
 
 macro - ;
 p/;
