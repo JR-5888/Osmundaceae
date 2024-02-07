@@ -7,12 +7,17 @@ characters_n[3]
 pickedran
 wcount
 xweight
+factor
 ;
+
+if(argnumber == 1) set factor %1 ; else set factor 3 ; end
 
 
 collapse tbr ;
+
 collapse [ 	 ;
 collapse - ;
+
 
 tgr - . ;
 rep - ;
@@ -32,7 +37,7 @@ loop =rpl 0 99
 			if('pickedran')
 				cc [ #xc ;
 
-				set pickedran getrandom[1 3] ; /* it´s active, how many times to sample (upweight)? */
+				set pickedran getrandom[1 'factor'] ; /* it´s active, how many times to sample (upweight)? */
 				cc /'pickedran' #xc ;
 				end
 		stop
@@ -66,7 +71,12 @@ stop
 
 sil - all;
 
+tv < ; majo ;
+
 collapse rule1;
 collapse ] ;
+collapse + ;
 rep=; 
+
+
 lquote ] ; macro - ; p/ ;
