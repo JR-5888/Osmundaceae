@@ -1,0 +1,72 @@
+macro = ; 
+lquote[ ;
+macseed 0 ;
+
+var :
+characters_n[3]
+pickedran
+wcount
+xweight
+;
+
+
+collapse tbr ;
+collapse [ 	 ;
+collapse - ;
+
+tgr - . ;
+rep - ;
+sil = all ;
+
+loop =rpl 0 99
+	rseed * ;
+	cc /1 ] . ; /*all characters not sampled */
+
+	set characters_n[0] getrandom[0 nchar] ;
+
+	xgroup - . ;
+	xgroup =0 'characters_n[0]' ;
+
+	loop =xc 0 nchar
+		set pickedran getrandom[0 1] ; /* shall I acttivate or not? */
+			if('pickedran')
+				cc [ #xc ;
+
+				set pickedran getrandom[1 3] ; /* it´s active, how many times to sample (upweight)? */
+				cc /'pickedran' #xc ;
+				end
+		stop
+
+			set wcount 0 ;	
+			loop =xw 0 nchar
+				if(isact[#xw])
+					set wcount += weight[#xw] ;
+					end
+				stop
+			
+			if('wcount' == (nchar+1))
+				quote :&10 done! en #rpl - wcount es 'wcount' (take actions here) ;
+				k0;
+				mult 10 ; ne * ; tch /;
+				tgr =#rpl (replic_#rpl) . ;
+				tv > ;
+				
+				loop =xa 0 nchar
+						if(isact[#xa])
+						set xweight weight[#xa] ;
+						quote #xa - weight 'xweight' ;
+						end
+						stop
+
+			else
+				setloop #rpl;
+			end
+k0;
+stop
+
+sil - all;
+
+collapse rule1;
+collapse ] ;
+rep=; 
+lquote ] ; macro - ; p/ ;
