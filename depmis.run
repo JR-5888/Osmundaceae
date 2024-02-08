@@ -1,0 +1,60 @@
+macro = ; 
+
+/* ====================================================================================================== *\
+|   Isolate the effect of dependence from that of missind data												|
+|																											|
+|	The procedure consists of iteratively replacing missing data and polymorphisms.							|
+|	by one of the observed states. Cell replacement is done by any of the states in the polymorphic cell	|
+|	or any state within the character in the case of missing entries										|
+|																											|
+|	The results are summarised in strict and majority consensus												|
+\* ======================================================================================================= */
+
+var :
+cell_visited[2]		/* matrix cell visited */
+cell_state			/* state(s) in the cell, as bit */
+cell_state_bitn 	/* number of bits "on" in the visited cell */ 
+threshold			/* minimum proportion of cells to visit and modify */
+cells_tovisit		/* cells to visit according to threshold */
+increase_th			/* factor increasing the number of cells visited at each iteration */
+replacement_value	/* randomly selected state */
+itcounter			/* how many cells were visited and replaced? */
+;
+
+
+set threshold 0.25 ;
+
+set cells_tovisit ( ('threshold' * (nchar+1)) / 1.0 ) ;
+
+set increase_th ((nchar+1)/10) ; /* in each iteration, number of visited cells will increase until no one is left */
+
+loop =tx 0 ntax
+	set cell_visited[0] #tx ;
+	loop =cx 0 nchar
+		set cell_visited[1] #cx ;
+		set cell_state states['cell_visited[1]' 'cell_visited[0]'] ;
+		
+			/* checking if it is a single observation or a polymorphism/missing entry */
+			if('cell_state' == missing) /* missing entry, randomly select one from the range of observed states in the character */
+				set replacement_value getrandom[0 (maxstate[#cx])] ;
+				xread ='cell_visited[0]' 'cell_visited[1]' 'replacement_value' ;
+				set itcounter ++ ;
+			end 
+			
+		stop
+	stop
+	
+	if('itcounter' == '/.0cells_tovisit')
+		if('/.0cells_tovisit' < (nchar+1))
+			set cells_tovisit '/.0cells_tovisit' + '/.0increase_th' ;
+			
+	
+
+				/*
+				set cell_state_bitn numbits['cell_state'] ;
+				if('cell_state_bitn' > 1) /* it is polymorphic, randomly select one state (otherwise is non-polymorphic and there is nothing to do here) */
+						loop =xs 0 maxstate[cx]
+								if()
+							stop
+					end
+				*/
