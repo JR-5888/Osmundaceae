@@ -1,14 +1,29 @@
 macro = ; 
 
+if(!argnumber) quote GIVE THE TREATMENT NAME AS FIRST ARGUMENT; proc/; end
+
+lquote [ ;
+
+hold 100/1000;
+outgr Rastrop; 
+
+taxonomy + ;
+reroot;
+tv > ; 
+
+
+
+/*
 var : borrame esta ;
 loop 0 200
 	set borrame getrandom[0 ntax] ;
 	set esta getrandom[0 nchar] ;
 	xread ='esta' 'borrame' ? ;
 	stop
+*/
 
 var - ; 
-xread*;
+
 
 /* ====================================================================================================== *\
 |   Isolate the effect of dependence from that of missind data												|
@@ -41,36 +56,70 @@ misamount
 threshold
 cellcount
 cell_state
+ttx
+ccx
+replacement
+trf
+tsimil
 ;
 
 set misamount 0; /* 1 */
 loop =tx 0 ntax
 	loop =cx 0 nchar
-		if(state[#cx #tx] == missing) set misamount ++ ; end
+		if(states[#cx #tx] == missing) set misamount ++ ; end
 		stop
 	stop
 
-set threshold 'misamount'/10 ;
+set threshold 'misamount'/100 ;
 
+
+quote MISSING ENTRIES='misamount' THRESHOLD ='/.0threshold';
+
+collapse tbr ; 
 set cellcount 0;
-loop =rep 1 'misamount'
-	if('threshold' < 'misamount')
 
-			set ttx getrandom[0 ntax];
-			set ccx getrandom[0 nchar];
-	
-				if(state['ccx' 'ttx'] == missing)
-					set replacement getrandom[0 (maxstate['ccx'])] ;
-					xread ='ccx' 'ttx' 'replacement' ;
-					set cellcount ++ ;
-									if('cellcount' == ('threshold'))
-											set threshold += 'threshold' ;
-										else
-											setloop #rep ;
-										end					
-					else
-						setloop #rep ;
-					end
+tgr - . ;
+sil = all;
+quote :TREATMENT, REPLACED, DISTORTION_COEFFICIENT, RF;
+	loop =tx 0 ntax
+		set ttx #tx;
+			
+		loop =cx 0 nchar
+		set ccx #cx;
+			
+			if(states['ccx' 'ttx'] == missing)
+				set replacement getrandom[0 (maxstate['ccx'])] ;
+				xread ='ccx' 'ttx' 'replacement' ;
+				set cellcount ++ ;
+				
+						if('cellcount' == ('/.0threshold'))
 
-		end
-	stop
+							quote &10 - ACTIONS:;
+							set threshold += ('misamount'/100) ;
+
+							k0 ; agr - 0 ;
+							mult 10 = tbr ;
+							pcrprune /\ >0; pruntax /{0}; 
+							unique; ne * ; tch/ ;
+							tv > . ;
+
+								tv < 0 ; /* this is the taxonomy tree */
+								loop =tcheck 0 ntax 
+									if(!isintree[0 #tcheck]) pruntax 1/#tcheck ; end
+									stop
+								
+								set tsimil symcoeff 0/1;
+								set trf rrfdistp 0/1;
+								quote :%1, 'cellcount', '/.3tsimil', '/.3trf'; 
+								
+							end
+
+				end
+
+			stop
+		stop
+
+sil - all ;
+collapse rule1;
+
+p/;
