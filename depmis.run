@@ -20,51 +20,57 @@ xread*;
 |	The results are summarised in strict and majority consensus												|
 \* ======================================================================================================= */
 
+
+/*
+
+1. contar la cantidad de missing entries ('misamount')
+2. dividir el total en 10 ('threshold')
+3. seteo a 0 el contador de celdas a reemplazar ('cellcount')
+4. loop por el total de celdas:
+5. encuentro una celda missing ('cell_state')
+6. reemplazo al azar por estado
+7. cuento la cantidad de celdas reemplazadas
+8. la cantidad de reemplazos es igual al ith/10th total de missing celdas?
+9. si es "si", adiciono "i" a "i"
+10. Realizo búsquedas y evalúo la métrica
+11. Si "i" es igual al total de missing celdas 'm', termino el test. Caso contrario, repito pasos 4 al 10. 
+
+*/
 var :
-cell_visited[2]		/* matrix cell visited */
-cell_state			/* state(s) in the cell, as bit */
-cell_state_bitn 	/* number of bits "on" in the visited cell */ 
-threshold			/* minimum proportion of cells to visit and modify */
-cells_tovisit		/* cells to visit according to threshold */
-increase_th			/* factor increasing the number of cells visited at each iteration */
-replacement_value	/* randomly selected state */
-itcounter			/* how many cells were visited and replaced? */
+misamount 
+threshold
+cellcount
+cell_state
 ;
 
-
-set threshold 0.25 ;
-
-set cells_tovisit ( ('threshold' * ( (nchar+1) * (ntax+1) ) ) / 1.0 ) ;
-
-set increase_th 'cells_tovisit' ; /* in each iteration, number of visited cells will increase until no one is left */
-
-set itcounter 0; 
-quote itcounter:'itcounter' increase_th:'increase_th' cells_tovisit:'cells_tovisit' ;
-
-loop =iter 1 1000
-		set cell_visited[0] getrandom[0 (ntax)]	;
-		set cell_visited[1] getrandom[0 (nchar)];
-			/* quote Taxon: 'cell_visited[0]' Character: 'cell_visited[1]'; */
-			
-		set cell_state states['cell_visited[1]' 'cell_visited[0]'] ;
-
-			/* checking if it is a single observation or a missing entry */
-			if('cell_state' == missing)
-				set replacement_value getrandom[0 (maxstate['cell_visited[1]'])] ;
-				xread ='cell_visited[1]' 'cell_visited[0]' 'replacement_value' ;
-				set itcounter ++ ;
-				end 
-		
-			if('itcounter' == 'increase_th')
-				set increase_th += 'cells_tovisit' ;
-				quote modified 'itcounter' (next round: 'increase_th') ;
-				end
-					
-			if('itcounter' == ( (nchar+1) * (ntax+1) ) ) 
-				quote IGUAL;
-				endloop
-				end
+set misamount 0; /* 1 */
+loop =tx 0 ntax
+	loop =cx 0 nchar
+		if(state[#cx #tx] == missing) set misamount ++ ; end
+		stop
 	stop
 
-xread*;
-p/;
+set threshold 'misamount'/10 ;
+
+set cellcount 0;
+loop =rep 1 'misamount'
+	if('threshold' < 'misamount')
+
+			set ttx getrandom[0 ntax];
+			set ccx getrandom[0 nchar];
+	
+				if(state['ccx' 'ttx'] == missing)
+					set replacement getrandom[0 (maxstate['ccx'])] ;
+					xread ='ccx' 'ttx' 'replacement' ;
+					set cellcount ++ ;
+									if('cellcount' == ('threshold'))
+											set threshold += 'threshold' ;
+										else
+											setloop #rep ;
+										end					
+					else
+						setloop #rep ;
+					end
+
+		end
+	stop
