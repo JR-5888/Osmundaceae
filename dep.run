@@ -105,9 +105,23 @@ xlinks
 vlink /;
 vlink ; 
 
+
+
+
+xgr =0 
+
+0 1 6 7 8 10 11 15 16 19 21 22 24 25 28 29 30 32 33 34 35 36 37 38 39 40 41
+
+;
+
+
+xpi=; xpi(*0.25 ; pi=5; xpi ( {0} /5;
+
+
+xm: replic 5 hit 10 drift 15 norat norss noxss nocss fuse 3;
+
 p/;
 
-xm : replic 5 hit 3 drift 15 norat norss nocss noxss fuse 3;
 hold 500 / 500 ;
 macro - ;
 
