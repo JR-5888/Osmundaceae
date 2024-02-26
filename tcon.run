@@ -71,7 +71,6 @@ set reftree_gr 0 ;
 
 
 log tables.csv;
-/*
 rep - ;
 loop =G 1 5
 	set count 0 ;
@@ -92,7 +91,7 @@ loop =G 1 5
 	set simil[(#G-1)] ('simil[(#G-1)]'/'count') ;
 	stop
 rep=;
-*/
+
 
 
 
@@ -202,9 +201,9 @@ set title_x 33; set title_y 13;
 set posx[0] 20; set posx[1] 61; set posx[2] 101;
 set posy[0] 25; set posy[1] 66;
 
-log caquita.svg;
+log simgroup.svg;
 quote :&10&10;
-quote :<svg width=&34 600&34&32	height=&34 600&34&32		xmlns=&34http://www.w3.org/2000/svg&34> &10;
+quote :<svg width=&34 900&34&32	height=&34 900&34&32		xmlns=&34http://www.w3.org/2000/svg&34> &10;
 
 loop =txgr 6 11
 
@@ -291,6 +290,18 @@ loop =txgr 6 11
 
 	stop
 quote :&10;
+
+quote :<text x=&34 603 &34&32 y=&34 120 &34&32 fill=&34black&34&32 >Scale </text> &10;
+  quote :&32 <defs> &10;
+    quote :&32&32 <linearGradient id=&34grad1&34&32 x1=&34 0&37&34&32 x2=&34 0&37&34&32 y1=&34 0&37&34&32 y2=&34 100&37&34&32> &10;
+      quote :&32&32&32 <stop offset=&34 0&37&34&32 style=&34stop-color:rgb(65,65,255)&34 /> &10;
+      quote :&32&32&32 <stop offset=&34 100&37&34&32 style=&34stop-color:rgb(255,255,255)&34 /> &10;
+    quote :&32&32 </linearGradient> &10;
+  quote :&32 </defs> &10;
+  quote :<rect width=&34 40&34&32 height=&34 80&34&32 x=&34 601&34&32  y=&34 125&34&32 fill=&34url(&35grad1)&34&32 /> &10;
+  quote :<text &32 fill=&34black&34&32 font-size=&34 10&34&32 font-family=&34Verdana&34&32 x=&34 643&34&32 y=&34 130&34&32 >-0&37 taxon added/extracted </text> &10;
+  quote :<text &32 fill=&34black&34&32 font-size=&34 10&34&32 font-family=&34Verdana&34&32 x=&34 643&34&32 y=&34 211&34&32 >-100&37 taxon added/extracted </text> &10;
+
 quote :</svg>;
 log/;
 quote :&10&10;

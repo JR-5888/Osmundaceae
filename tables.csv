@@ -1,0 +1,15 @@
+Comparison, RF, Prop. common nodes
+G0 vs G1, 0.660003, 0.460317
+G0 vs G2, 0.870313, 0.180556
+G0 vs G3, 0.765281, 0.291139
+G0 vs G4, 0.789087, 0.226415
+G0 vs G5, 0.723531, 0.320513
+
+SIMGROUP 
+GROUP, T0, T1, T2, T3, T4, T5, T6
+Osmundaceae, 0, 0, 0, 0, 0, 0, 133
+Osmundoideae, 147, 149, 0, 164, 169, 170, 141
+Thamnospteroideae, 0, 142, 0, 0, 0, 0, 135
+Guaireaceae, 0, 0, 141, 142, 142, 0, 139
+Itopsidemoideae, 149, 153, 172, 168, 173, 174, 143
+Guaireoideae, 0, 0, 140, 141, 141, 0, 138
