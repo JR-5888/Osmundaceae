@@ -1,0 +1,327 @@
+macro = ; 
+lquote = ;
+lquote[;
+sil = all;
+
+xwip;
+tgr/;
+mxram 250;
+p bom2017.tnt; 
+collapse - ;
+hold 12500/12500;
+
+
+
+agr - . ;
+
+	p new_nondep.tre; 
+		pcrprune /\ >0 ;  
+		tgr =0 (ew_nondep) . ;
+		tv > ;
+		k0 ;
+
+
+	p new_dep.tre; 
+		pcrprune /\ >1 ; 
+		tgr =1 (ew_dep) . ;
+		tv > ;
+		k0 ;
+
+	p k5-dep.tre; 
+		pcrprune /\ >2 ; 
+		tgr =2 (k5_dep) . ;
+		tv > ;
+		k0 ;
+
+	p k10-dep.tre; 
+		pcrprune /\ >3 ; 
+		tgr =3 (k10_dep) . ;
+		tv > ;
+		k0 ;
+
+
+	p k15-dep.tre;
+		pcrprune /\ >4 ; 
+		tgr =4 (k15_dep) . ;
+		tv > ;
+		k0 ;
+
+
+	p k20-dep.tre; 
+		pcrprune /\ >5 ; 
+		tgr =5 (k20_dep) . ;
+		tv > ;
+		k0 ;
+
+
+
+/* topological congruence relative to a tree of reference */
+
+var :
+reftree_gr
+prop_comnod[5]
+small_size
+simil[5]
+count
+;
+
+	/*	simil first	*/
+tv < ;
+set reftree_gr 0 ;
+
+
+log tables.csv;
+rep - ;
+loop =G 1 5
+	set count 0 ;
+	set simil[(#G-1)] 0 ;
+	loop =A 0 1999
+		progress #A 1999 Compare tree against tree in group #G .. ;
+
+			loop =B 2000 ntrees
+				if(isintgroup[#G #B])
+					set simil[(#G-1)] += rrfdistp #A/#B/ ;
+					set count ++ ;
+					end
+				stop
+		progress = ;
+		stop
+		progress /;
+
+	set simil[(#G-1)] ('simil[(#G-1)]'/'count') ;
+	stop
+rep=;
+
+
+
+
+	/*	proportion of shared nodes, between pruned consensus	*/
+loop =G 0 5
+
+	pruntax {#G}/{#G};
+	unique ;
+	ne * {#G}/ ; 
+	tv > / ;
+
+	stop
+
+k0 ; 
+tv < ; 
+tgr =6 (pruned_consensus) siz<132 ;
+tch {6} ;
+loop =tr 1 ntrees
+	if (tsize[0] > tsize[#tr])
+		set small_size (tsize[1]) ;
+		else
+		set small_size (tsize[0]) ;
+		end
+
+	ne * 0 #tr ;
+	set count ntrees ;
+	set small_size (tsize['count']-2) ;
+	set prop_comnod[(#tr-1)] tnodes['count'] / 'small_size' ;
+	tch {6} ;
+	stop
+
+quote :Comparison, RF, Prop. common nodes&10;
+loop 1 5
+	quote :G0 vs G#1, 'simil[(#1-1)]', 'prop_comnod[(#1-1)]'&10;
+	stop
+
+taxonomy + ;
+set count ntrees;
+
+agroup 
+=11	(Itopsidemoideae) @'count' 143 
+=10	(Guaireoideae)	@'count' 138  
+=9	(Guaireaceae) @'count' 139
+=8	(Thamnospteroideae)	@'count' 135  
+=7	(Osmundoideae)	@'count' 141  
+=6	(Osmundaceae)	@'count' 133
+;	
+
+
+quote :&10 SIMGROUP &10 ;
+quote :GROUP; loop 0 ('count') quote :, ; quote :T#1; stop quote :&10;
+quote :Osmundaceae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 133 #1] ;
+	quote :'/.0simil';
+	stop
+quote :&10Osmundoideae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 141 #1] ;
+	quote :'/.0simil';
+	stop
+quote :&10Thamnospteroideae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 135 #1] ;
+	quote :'/.0simil';
+	stop
+quote :&10Guaireaceae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 139 #1] ;
+	quote :'/.0simil';
+	stop
+quote :&10Itopsidemoideae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 143 #1] ;
+	quote :'/.0simil';
+	stop
+quote :&10Guaireoideae;
+loop 0 ('count')
+	quote :, ;
+	set simil simgroup['count' 138 #1] ;
+	quote :'/.0simil';
+	stop
+
+	quote :&10&10 ;
+
+var :
+title_x
+title_y
+posx[3]
+posy[2]
+R
+G
+B
+opacity
+sq_size
+name
+;
+quote :&10 SIMGROUP.svg &10 ;
+
+set sq_size 40;
+set title_x 33; set title_y 13;
+set posx[0] 20; set posx[1] 61; set posx[2] 101;
+set posy[0] 25; set posy[1] 66;
+
+log simgroup.svg;
+quote :&10&10;
+quote :<svg width=&34 900&34&32	height=&34 900&34&32		xmlns=&34http://www.w3.org/2000/svg&34> &10;
+
+loop =txgr 6 11
+
+		if(#txgr == 9)
+			set title_x 33; set title_y 213;
+			end
+
+		if(#txgr >= 9)
+			set posy[0] 225 ; set posy[1] 266 ;
+			end
+
+		if(#txgr == 6)
+			set name $Osmundaceae ;
+		else if(#txgr == 7)
+			set name $Osmundoideae ;
+		else if(#txgr == 8)
+			set name $Thamnospteroideae ;
+		else if(#txgr == 9)
+			set name $Guaireaceae ;
+		else if(#txgr == 10)
+			set name $Guaireoideae ;
+		else if(#txgr == 11)
+			set name $Itopsidemoideae ;
+		end end end end end end
+
+
+
+	quote :&10&10<text x=&34 'title_x'&34&32 y=&34 'title_y'&34&32 fill=&34black&34&32 	>$name </text> &10;
+	set title_x += 200;
+
+
+	loop =tre 0 ('count'-1)
+
+		if(#txgr == 9)
+			set posx[0] 20; set posx[1] 61; set posx[2] 101;
+			end
+
+		if(#txgr == 6)
+			set simil simgroup['count' 133 #tre] ;
+		else if(#txgr == 7)
+			set simil simgroup['count' 141 #tre] ;
+		else if(#txgr == 8)
+			set simil simgroup['count' 135 #tre] ;
+		else if(#txgr == 9)
+			set simil simgroup['count' 139 #tre] ;
+		else if(#txgr == 10)
+			set simil simgroup['count' 138 #tre] ;
+		else if(#txgr == 11)
+			set simil simgroup['count' 143 #tre] ;
+		end end end end end end
+
+				set small_size regalfa;
+				set reftree_gr regr;
+				quote ADDED 'small_size', REMOVED 'reftree_gr'&10&10;
+
+		if('simil')
+
+				set R (65 * ('small_size'+1));
+				set G (65 * ('small_size'+1));
+				set B 255;
+
+				set opacity 1 - ('reftree_gr'/10) ;
+			else
+				set R 255;
+				set G 255;
+				set B 255;
+
+				set opacity 1;
+
+			end
+
+
+		if(#tre <= 2)
+			quote :<rect width=&34 'sq_size'&34&32 height=&34 'sq_size'&34&32 x=&34 'posx[#tre]'&34&32 y=&34 'posy[0]'&34&32 stroke=&34black&34&32 fill=&34rgb('R','G','B')&34&32 style=&34fill-opacity:'opacity'&59stroke-opacity:'opacity'&34 />&10;
+		else
+			quote :<rect width=&34 'sq_size'&34&32 height=&34 'sq_size'&34&32 x=&34 'posx[(#tre-3)]'&34&32	y=&34 'posy[1]'&34&32 stroke=&34black&34&32
+			fill=&34rgb('R','G','B')&34&32 style=&34fill-opacity:'opacity'&59stroke-opacity:'opacity'&34 /> &10;
+		end
+
+
+		stop
+
+		set posx[0] += 200 ; set posx[1] += 200 ; set posx[2] += 200 ;
+
+	stop
+quote :&10;
+
+quote :<text x=&34 603 &34&32 y=&34 120 &34&32 fill=&34black&34&32 >Scale </text> &10;
+  quote :&32 <defs> &10;
+    quote :&32&32 <linearGradient id=&34grad1&34&32 x1=&34 0&37&34&32 x2=&34 0&37&34&32 y1=&34 0&37&34&32 y2=&34 100&37&34&32> &10;
+      quote :&32&32&32 <stop offset=&34 0&37&34&32 style=&34stop-color:rgb(65,65,255)&34 /> &10;
+      quote :&32&32&32 <stop offset=&34 100&37&34&32 style=&34stop-color:rgb(255,255,255)&34 /> &10;
+    quote :&32&32 </linearGradient> &10;
+  quote :&32 </defs> &10;
+  quote :<rect width=&34 40&34&32 height=&34 80&34&32 x=&34 601&34&32  y=&34 125&34&32 fill=&34url(&35grad1)&34&32 /> &10;
+  quote :<text &32 fill=&34black&34&32 font-size=&34 10&34&32 font-family=&34Verdana&34&32 x=&34 643&34&32 y=&34 130&34&32 >-0&37 taxon added/extracted </text> &10;
+  quote :<text &32 fill=&34black&34&32 font-size=&34 10&34&32 font-family=&34Verdana&34&32 x=&34 643&34&32 y=&34 211&34&32 >-100&37 taxon added/extracted </text> &10;
+
+quote :</svg>;
+log/;
+quote :&10&10;
+
+
+
+
+sil - all ;
+
+loop 0 'count'
+	quote &10 Tree #1 (GROUP #1) &10 ; 
+	taxonomy &#1
+	=Guaireaceae =Itopsidemoideae =Guaireoideae
+	=Osmundaceae =Thamnopteroideae =Osmundoideae
+	;
+	stop
+
+log /;
+tgr/;
+lquote - ;
+lquote ] ;
+macro - ;
+p/;

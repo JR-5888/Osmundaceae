@@ -1,0 +1,141 @@
+macro = ;
+
+/* ========================================================================================= *\
+
+1- Character 1 is inapplicable if char. 0 is absent.
+
+2- Characters 6 (gaps) and 7 (perforations): 
+	there are leaf gaps without perforations, but there are no instances of the opposite. I.e., if there are no gaps, there are no perforations.
+
+3- Character 8 (Internal embayments) depends on the leaf gaps (6) presence: for internal embayments to develop, leaf gaps should be present.
+
+4- Characters 10 (Dissected condition) and 11 (Dictyostelic condition) depend on the existence of perforations (7). States in either 10 or 11 are likely related but it is nod deemed a "complete" dependence. Because the state 0 in 7 is not 'absolute absence' of perforations ['(nearly) imperforate: 3 complete perforations'], the complex is set to penalize changes in chars. 10 and 11 when state in char. 7 is 0 in the descendant.
+
+5- Characters 16 depends on the presence state in character 15.
+
+6- See below
+
+7- Characters 30 ("Appearance of sclerenchyma in stipe bundle concavity") and 29 ("Sclerenchyma in stipe bundle concavity, special states") depend on character 28 ("Sclerenchyma in stipe bundle concavity"): characters 30 and 29 are applicable only when 28 is either 1 or 2.
+
+8- Character 33 ("Sclerenchyma cylinder of stipe base") can be scored only when character 32 ("Stipe cortex with distinct outer sclerenchyma cylinder") is present.
+
+9- From characters 34 ("Abaxial arch developing distally into a complete ring") to 37 ("Two lateral masses developing distally into an adaxial arch") depend on the presence of 33 ("Sclerenchyma cylinder of stipe base"). However, beacuse state 0 in 33 is "homogeneous or diffusely
+heterogeneous", a perfect static dependence is not possible. Instead, changes in chars 34-37 are penalised when occuring when 33 is 0.
+
+10- Character 39 ("Scattered sclerenchyma fibres in stipular wings") depends on the state 1 ("wings") of character 38 ("Stipular extensions"). This should be a case of inapplicability but the original scoring by Bomfleur et al does not fulfil such dependence. So the change will be penalised. 
+
+11- Character 40 ("Distinct sclerenchyma masses in stipular wings") also depends on the state 1 ("wings") of char. 38. However, is opposite to character 39 ("Scattered sclerenchyma fibres in stipular wings"): if scattered fibers are present (state 1, char. 39), it not possible to have discrete masses in the stipular wings. Because the original scoring by Bomfleur et al does not satisfy such dependence, it will be penalised instead of forbidden.
+
+12- Character 41 ("Shape or arrangement of distinct sclerenchyma masses in cross-sections of stipular wings") depends on the presence of wings (state 1, char. 38) and discrete schlerenchyma masses (states 1 or 2, char. 40).
+
+\* ========================================================================================== */
+
+xlinks
+	0 :0
+		< 1 - >
+
+	6 :0
+		[+2 7 0 > 1 2 ]
+	6 :1 | 6 :2
+		[ +2 7 0 > 2]
+	6 :0
+		[+2 8 0 > 1 2 ]	
+
+	7 :0
+		[ +2 10 0 > 1 ]
+		[ +2 11 0 > 1 ]
+
+	15 :0
+		< 16 - >
+
+	28 :0
+		< 29 - >
+		< 30 - >
+
+	32 :0
+		< 33 - >
+
+	33 :0
+		[+1 34 0 > 1 ]
+		[+1 35 0 > 1 ]
+		[+1 36 0 > 1 ]
+		[+1 37 0 > 1 ]
+
+	38 :0 | 38 :2
+		< 39 - >
+
+	39 :1
+		[ +1 40 0 > 1 2 ]
+
+	38 :0 & 40:0
+		< 41 - >
+
+;
+
+/* ===================================================================== *\
+
+6- From characters 19 to 26, characters are intrincately dependent:
+ 
+ a. Char. 19 is the number of protoxylem strands in the leaf trace upon departure from the stele and 21 is the shape of the leaf trace immediately after departure form stele. Here, there are two choices...HA: state 2 in 21 ("two individual segments") exclusively concurs with state 1 in 19 ("two")...HB: state 2 in 21 can occur with either state 0 or state 1 in 19, but it is less likely under state 0.
+
+ b. Chars. 22 and 19. Character 22 is the number of leaf trace protoxylem strands in *central part of cortex* whereas 19 is on the protoxylem strands in the leaf trace after *departure from stele*. Since 22 is at the cortex level (outer) whereas 19 is closer to the stele (inner), the former (22) is deemed dependent on 19. Note that both characters refer to the number of protoxylem strands, and that there is no fusion of strands as leaf traces move on towards the external positions. I.e., the state of an external leaf trace depends on the inner trace.
+
+ c. Char. 24 ("Number of leaf trace protoxylem strands upon departure from stem") refers to the leaf traces departing from the 'stem', as opposed to 22 ("leaf traces in cortex") and 19 ("leaf traces departing from stele"). So this series constitutes an example of serial homology, where the state in a character depends (albeit not perfectly) with another character ontologically related: char. is the innermost characters and 24 the outermost.
+
+ d. Char. 25 ("Shape of stipe bundle immediately after departure from stem") is related to 21 ("Shape of leaf trace immediately after departure from stele"): state 0 ("oblong") in char. 25 does not occur under state 2 in 21 ("two individual segments").
+
+ \* ==================================================================== */
+
+xlinks
+	19 :0 | 19 :1 
+		[[ +1 21 0 1 > 2 ]]
+
+	19 / 0 > 1 &
+	22 / 0 > 1 
+		[[ -1 24 0 > 1 ]]
+
+	19 / 1 > 2 &
+	22 / 1 > 2 
+		[[ -1 24 1 > 2 ]]
+
+	21 :2
+		[[ +2 25 ? > 0 ]]
+;
+
+vlink /;
+vlink ; 
+
+
+
+
+xgr =0 
+
+0 1 6 7 8 10 11 15 16 19 21 22 24 25 28 29 30 32 33 34 35 36 37 38 39 40 41
+
+;
+
+
+xpi=; xpi(*0.5 ; pi=5; xpi ( {0} /5;
+
+
+xm: replic 5 hit 10 drift 15 norat norss noxss nocss fuse 3;
+
+p/;
+
+hold 500 / 500 ;
+macro - ;
+
+xli [ ; 
+xm ; bb; 
+
+tsa * dep.tre ; sa ; tsa/; 
+
+k0 ; 
+
+xli ] ; 
+xm ; bb; 
+
+tsa * nondep.tre ; sa ; tsa/;
+
+
+p/;

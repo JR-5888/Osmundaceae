@@ -1,0 +1,77 @@
+xwip; cls; clb; tta - ; 
+
+macro = ; 
+
+pi=;
+p bom2017.tnt ; 
+run dep.run ; 
+pi - ; 
+collap-;
+
+subo 0 x 0 ;
+
+xli ] ;
+k0 ; 
+p new_nondep_pruned_strict_consensus.tre ;
+
+/* Bremer Supp */
+
+agr - 0 ; 
+
+loop 0 ntax
+	if(!isintree[0 #1])
+		agr > 0 #1 ; 
+		end
+		stop
+
+k0 ; 
+p new_nondep.tre ;
+
+loop 1 12
+	hold +100 ;
+	subo #1 x 0 ;
+	bb = fillonly ;
+	stop
+
+ttag = ;
+bsupp /{0}; 
+ttag & f1a.svg fontsize 20 ; 
+ttag - ;
+
+subo 0 x 0 ;
+
+
+
+
+
+xli[;
+k0 ; 
+p new_dep_pruned_strict_consensus.tre ;
+
+/* Bremer Supp */
+
+agr - 0 ; 
+
+loop 0 ntax
+	if(!isintree[0 #1])
+		agr > 0 #1 ; 
+		end
+		stop
+
+k0 ; 
+p new_dep.tre ;
+
+loop 1 8
+	hold +100 ;
+	subo #1 x 0 ;
+	bb = fillonly ;
+	stop
+
+ttag = ;
+bsupp /{0}; 
+ttag & f1b.svg fontsize 20 ; 
+ttag - ;
+
+
+subo 0 x 0 ;
+p/;

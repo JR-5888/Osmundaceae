@@ -1,0 +1,70 @@
+collapse -  ; 
+
+taxna - ;
+
+k0 ; 
+hold 2000/100 ;
+macro = ;
+var :
+size
+choose 
+;
+
+p dep.tre ;
+	pcrprune /\ >0 ;
+	ne * /{0} ;
+	tv > / ;
+
+k0; 
+p nondep.tre ; 
+	pcrprune /\ >1 ;
+	ne * /{1} ; 
+	tv > / ;
+
+k0 ;
+
+loop 0 1
+	set size 0 ;
+	loop 0 ntax
+		if(isinagroup[#1 #2])
+			set size ++ ;
+			end
+		stop
+	quote Group #1 has 'size' terminals;
+	stop
+
+cls; clb; 
+
+	/* Relative to group 0, with dependencies on */
+
+k0; p taxonomy.tre ;
+loop 0 ntax
+	if(isinagroup[0 #1])
+		pruntax 0/#1 ;
+		end
+	stop
+	force / &0 ;
+	taxna=;
+	force * ;
+	k0;
+	tv < 0 ;
+	mono * ;
+
+
+
+	/* Relative to group 1, wit dependencies off */
+k0; p taxonomy.tre ;
+loop 0 ntax
+	if(isinagroup[1 #1])
+		pruntax 0/#1 ;
+		end
+	stop
+	force / &0 ;
+	force * ;
+	k0;
+	tv < 1 ;
+	mono * ;
+
+
+macro - ;
+p/;	
