@@ -1,0 +1,653 @@
+macro-;
+mxram 500;
+macro* 50 200000;
+macro[100000;
+macro=;
+macfloat 0;
+
+macreport=;
+
+quote =======================================================================================================;
+quote                         THIS SCRIPTS DETECTS TAXA THAT ARE UNSTABLE IN RESAMPLING SUPPORT ANALYSIS 
+
+                        IT USES ONE OBLIGATORY ARGUMENT:
+                                1st argument) file name of the dataset
+                                
+                        AND TWO OPTIONAL ARGUMENTS:
+                                2nd argument) resampling method (default=jackknife)
+                                3rd argument) number of jackknife replicates (default=100)
+                                4th argument) cut-off value for excluding taxon (default=15)
+                         
+                         FIRSTLY IDENTIFIES TAXA UNSTABLE AMONG THE MPTS OF EACH REPLICATE AND 
+                         COLLAPSE THE CONSENSUS IN MANY (=CUTOFF VALUE) REPLICATES. 
+
+                        SECONDLY DETECTS TAXA THAT TAKE MANY POSITIONS IN DIFFERENT REPLICATES.
+                        THIS USES THE A MODIFICATION OF ITERPCR (TESTING TRIPLETS THAT COLLAPSE MAJORITY RULE 
+                        CONSENSUS) TO DETECT TAXA THAT ARE UNSTABLE AMONG THE CONSENSUSES DERIVED FROM 
+                        EACH JACKKNIFE REPLICATE
+			
+                        THIRDLY IT ANALYSES THE COMBINATION OF THAT UNSTABLE TAXA DETECTED IN STEP 1 AND 2
+                        THAT PRODUCE MAXIMUM SUPPORT (LARGEST VALUE SUM OF JACKKNIFE VALUES), USING THE 
+                        COMMAND PRUPDN OF TNT
+						
+                        AT THE END REPORTS THE REDUCED JACKKNIFE SUPPORT TREE IN TWO FILES (PRUNING UNSTABLE TAXA):
+						
+                        1) pcrjak.OUT  (TEXT FILE WITH TREE AND SUPPORT VALUES FOLLOWED BY LIST OF UNSTABLE TAXA
+						
+                        2) pcrjak.SVG  (GRAPHIC FILE WITH REDUCED JACKKNIFE SUPPORT TREE AND SUPPORT VALUES)
+;			
+quote =======================================================================================================;
+
+/* Initialize */
+
+if (windows)
+	warn-;
+end;
+
+proc %1; taxna - ;
+
+if (!windows)
+	clb;
+end;
+
+if (windows)
+    ra1;
+	tplot];
+	k0;
+end;
+
+ho 10000;
+/*  timeout 00:05:00;  */
+ag -.;
+tsave %1.ctf; ts/;
+goto = pcrjak.run;
+
+var = 
++  numtax
++  repls
++  elim
++  cutoff
+;
+set numtax ntax+1;
+var = 
++  counter ['numtax']
+;
+
+var=
++ maxtoclip
++  finaliter
++  countrepls
++  method
+;
+
+
+/* Define method, number of replicates, and cutoff values */
+if (argnumber > 1)
+	set method $%2 ;
+	if (argnumber > 2)
+		set repls %3;
+		if (argnumber > 2)
+			set cutoff ( %4 * ('repls'/100) ) ;
+		else
+			set cutoff 'repls' * 0.15 ;
+			if ('cutoff' < 1)
+				set cutoff 1;
+			end;
+		end;	
+	else
+		set repls 100;
+		set cutoff 15;
+	end;
+else
+	set method $jak ;
+	set repls 100;
+	set cutoff 15;	
+end;
+
+
+
+/* Do jaknife replicates and find unstable within each replicate */
+
+
+resample $method repl 'repls' freq allow
+[
+	set countrepls ++;
+	mult 10;
+	tsave* jaktrees.'countrepls'.tre; save; ts/;
+ 
+]
+;
+
+
+
+loop 1 'repls'
+
+	k0; proc jaktrees.#1..tre; 
+	pcr . > 1;
+	
+	loop 0 ntax
+		if (isinagroup[1 #2])
+			set counter[#2] ++;
+		end;
+	stop;
+
+	nelsen*; tchoose/;	
+	tsave %1.ctf +; save; ts/;
+	ag- 1;
+
+stop;
+k0;
+
+
+
+
+/* Detect most unstable taxa within replicates (above cutoff value) */ 
+
+log within.out; 
+quote agroup =30 (unstable_within_replicates) ;
+log/;
+
+loop 0 ntax
+	if ('counter[#1]' > 'cutoff' )
+		log+ within.out; 
+			quote #1 ;
+		log/;
+	end;
+stop;
+
+log+ within.out; 
+	quote ., ;
+	quote proc/., ;
+log/;
+
+
+
+
+sil-all;
+
+
+
+
+
+/* Detect most unstable taxa among replicates */ 
+
+log among.out; 
+quote agroup >31 (unstable_among_replicates) ;
+log/;
+
+
+goto IterPCRfreq %1;
+
+k0;
+
+log+ among.out; 
+	quote ., ;
+	quote proc/., ;
+log/;
+
+
+
+
+/* Define variables for analysis and output results */
+
+macfloat 1;
+sil-all;
+log pcrjak.%1.out; log/;
+
+var = 
++ freqarraydim
++  sum_support
++  last_node
+;
+set freqarraydim ntax*2+1;
+var = 
++ freq_list ['freqarraydim']
++ results_list [3]
++ tokeep
+;
+
+
+
+/* use PRUP to choose set of taxa from all the taxa within and among */
+
+ag-.;
+sil=all;
+
+ag =29 (all_unstable) ;
+ag =28 (selected_unstable) ;
+proc within.out;
+ag >29 {30};
+proc among.out; 
+ag >29 {31};
+
+
+loop 1 'repls'
+	proc  jaktrees.#1..tre ; 
+	set tokeep   #1   ;
+	k 'tokeep' ; 
+stop;
+
+sil-all;
+
+quote Selecting subset of unstable taxa....;
+prup 29 28 :1;
+
+k0;
+
+
+/* calculate jak support ignording unstable taxa selected in taxon group 28   */
+quote Calculating support ignoring unstable taxa....;
+tsave* prunednel.%1.tre;
+loop 1 'repls'
+	proc  jaktrees.#1..tre ; 
+	prunt ./ {28} ;
+	ne*; tchoose /;
+	save;
+	k0;
+stop;
+ ts/;
+proc prunednel.%1.tre;
+majo*; tchoose/;
+proc prunednel.%1.tre;
+
+
+set results_list[0] tnodes[0];
+set freq_list freqlist[0] 1.;
+
+
+k0; proc prunednel.%1.tre;
+
+
+
+
+set sum_support 0;
+set last_node (ntax+'results_list[0]')+1 ;
+loop (ntax+3) 'last_node'
+	set sum_support += 'freq_list[#1]' ;
+stop;
+set results_list[1] 'sum_support';
+set results_list[2] ( 'sum_support' / ('results_list[0]' - 1) );
+	
+log+ pcrjak.%1.out;
+	majo;
+	quote Number of nodes in MRC: 'results_list[0]';
+	quote Sum of supports in MRC: 'results_list[1]';		
+	quote Average support in MRC: 'results_list[2]';		
+	quote Taxa pruned from MRC:;
+	ag;
+log/;
+
+tt=; majo; tt& pcrjak.%1.svg;
+
+	
+k0;	
+	
+
+/* clean up and exit */ 
+if (!windows)
+if (linux)
+	sys rm jaktrees* ;
+	sys rm within* ;
+	sys rm among* ; 
+	sys rm %1.ctf;
+	sys rm prunednel*;
+else
+	sys del jaktrees* ;
+	sys del within* ;
+	sys del among* ; 
+	sys del %1.ctf;
+	sys del prunednel*;
+end;
+end;
+
+report=;
+ag-. ;
+tt-;
+macro-;
+sil-all;
+
+
+quote ========================SCRIPT FINISHED SUCCESSFULLY========================;
+p/;
+
+
+
+
+
+
+/* ===================== DO ITERPCRFREQ==================== */
+label IterPCRfreq;
+
+macfloat 2;
+
+var =
++ nomore
++ freqarraydimen
+;
+
+if (argnumber > 1) set maxtoclip %2; end;			/* SET THE MAX SIZE OF WILDCARD NODE TO PRUNE */
+
+k0;
+short %1.ctf;
+ts* %1.tre; save; ts/;
+ne*; tchoose / ; ts %1.nel.ctf; save; ts/;
+if (windows == 1) tplot ]; end;
+
+
+
+k0;
+
+var =
++ prunedtaxa [ntax]
++ countprune
++ indiprunmarker [ntax]
++ prunedmiss [ntax]
++ prunedmisscount
++ agrcount
++ lastrun
++ round
+;
+
+set agrcount 1;
+
+report-;
+sil=cons;
+
+loop 0 1000
+	progress #1 50 Detecting taxa unstable among replicates: Iteration #1; 
+
+    set round #1;
+	goto PCR %1 #1;
+	if ('nomore' == 1) 
+	    set finaliter ('round' - 2);
+		endloop; 
+	end;
+stop;
+progress /;
+
+
+if (!windows)
+if (linux)
+	system rm nel.tre;
+	system rm %1.tre;
+	system rm thisnode.tre;
+else
+	system del nel.tre;
+	system del %1.tre;
+	system del thisnode.tre;
+end;
+end;
+
+macfloat 0;
+k0; taxcode+.; sho %1.ctf ;
+
+if (!windows)
+if (linux)
+	system rm %1.nel.ctf;
+else
+	system del %1.nel.ctf;
+end;
+end;
+
+
+proc/;
+
+
+
+
+
+
+
+/* =============== DO PCR ============== */
+label PCR;
+
+macfloat 2;
+sil=cons;
+
+
+set freqarraydimen ntax+5;
+
+var =
++ firstnode
++  lastnode
++  ancdegree
++  agreecount
++  tripletcount
++  nelnodes
++  maxpoly
++  terminal
++  minpcr
++  maxpcr
++  desact
++  prunecount
++  branchtoprune
++  nodesize
++  limit
++  countdesc
++  supp_node
++  iteration
+;
+
+proc %1.tre;							/* READ TREES (PRUNED IF ITER>0) AND SET DEGREE OF LARGEST POLYTOMY */
+maj*; tchoose / ; tsave* nel.tre; save; ts/;			 /* THIS WAS CHANGED FROM ITERPCR TO USE MAJORITY RULE CONSENSUS  */  
+force= &0;
+set maxpoly maxcfork;
+set iteration %2;
+
+if ('maxpoly' < 4)
+	set nomore 1;						/* STOPPING RULE: WHEN TREE  IS WELL RESOLVED (ALLOW TRICHOTOMIES) */
+	proc /;
+end;
+
+										/* DEFINE ARRAYS BASED ON THE DEGREE OF THE LARGEST POLYTOMY */
+var = 												
++ pcr ['maxpoly']
++  descendants ['maxpoly'] 
++  clipclade ['maxpoly']
++  toprune [ntax]
++  checkdesact[4]
++  list_freq ['freqarraydimen']
++  freqpcr
++  numoftrees
+;
+									
+set firstnode ntax+2;					/* SET FIRST AND LAST NODE FOR CONSENSUS TREE */
+set lastnode nnodes[0];
+set prunecount 0; 						/* RESET TO 0 FROM PREVIOUS ITERATION */
+set branchtoprune 0;			   		/* RESET TO 0 FROM PREVIOUS ITERATION */
+
+
+loop 'firstnode' 'lastnode'				/* THIS LOOP GOES NODE BY NODE ON THE CONSENSUS TREE */ 
+	set ancdegree nodfork[0 #1];				/* CHECK DEGREE POLYTOMY */
+	if ('ancdegree' < 4)	
+		continue;
+	end;
+	
+	set descendants deslist[0 #1];				/* ARRAY OF NODE DESCENDANTS */
+	
+	taxcode +.; taxcode -4.;					/* DEACTIVATE ALL TAXA FOR SUBSEQUENT ACTIV OF DESCENDANTS */
+
+	loop 0 ('ancdegree'-1)						/* THIS LOOP REPLACES A DESC NODE BY A TERMINAL & ACTIV DESCENDANTS */
+		if ('descendants[#2]' <= ntax)
+			set clipclade[#2] 0;							/* RESET CLIPCLADE VARIABLE */
+		else
+			travtree up terms 0 'descendants[#2]' -terminal ; endtrav;
+			set clipclade[#2] 'descendants[#2]';
+			set descendants[#2] 'terminal';					/* REPLACE BY A TERMINAL IF DESC IS NODE */
+		end;
+
+		taxcode + 'descendants[#2]';						/* ACTIVATE DESCENDANTS */
+		if ('descendants[#2]' < 4)
+			set checkdesact['descendants[#2]'] 1;							/* SET WHEN DESC TAX NUMBER BETWEEN 1 AND 3 */
+		end;
+	stop;										/* END OF LOOP */
+
+	loop 1 3
+		if (isintree[0 #2] == 1)					/* CHECK 1 THROUGH 3 WHEN THEY ARE IN TREE */
+			if ('checkdesact[#2]' == 0)						
+				taxcode - #2;								/* DESACT 1 THROUGH 3 WHEN THEY ARE NOT DESCENDANTS BUT ARE IN TREE */
+			end;
+		else
+			taxcode - #2;									/* DESACT WHEN NOT IN TREE */									
+		end;
+		set checkdesact[#2] 0;								/* RESET CHECKDESACT FOR NEXT NODE */
+	stop;
+
+	k0; proc %1.tre;							/* READ TREES AND CREATES REDUCED TREES FOR CURRENT POLYTOMY */
+	pruntax ./!; 										
+	tsave* thisnode.tre; save; ts/; k0;						
+
+	set minpcr 1;		    					/* RESET TO MAX VALUE SO WILL SET MINPCR VALUE FOR THIS POLYTOMY */
+	set maxpcr 0;								/* RESET TO MIN VALUE SO WILL SET MAXPCR VALUE FOR THIS POLYTOMY */
+	loop 0 ('ancdegree'-1)
+		set pcr[#2] 0;							/* RESET PCR VARIABLE */
+	stop;
+	
+	set tripletcount ( ( ('ancdegree'-1) * ('ancdegree'-2) ) / 2 );		/* PRECALC NUMBER OF TRIPLETS FOR EACH TAXON */
+
+													/* EVALUATE TRIPLETS OF CURRENT POLYTOMY IN ALL TREES */
+	loop 0 ('ancdegree'-1)									/* SELECT DESCENDANT TO EVALUATE */
+		if (#2 < ('ancdegree'-2))
+			loop (#2+1) ('ancdegree'-2)									/* SELECT TAXON 2 OF TRIPLET */
+				loop (#3+1) ('ancdegree'-1)							/* SELECT TAXON 3 OF TRIPLET */
+			
+																/* READ REDUCED TREE FOR CURRENT POLYTOMY & ACTIVATE ONLY TRIPLET */
+					k0; proc thisnode.tre;						
+					taxcode +.; taxcode - 4.;
+					taxcode + 'descendants[#2]' 'descendants[#3]' 'descendants[#4]';
+					if ( ('descendants[#2]' != 1) && ('descendants[#3]' != 1) && ('descendants[#4]' != 1) )
+						taxcode - 1;
+					end;
+					if ( ('descendants[#2]' != 2) && ('descendants[#3]' != 2) && ('descendants[#4]' != 2) )
+						taxcode - 2;
+					end;
+					if ( ('descendants[#2]' != 3) && ('descendants[#3]' != 3) && ('descendants[#4]' != 3) )
+						taxcode - 3;
+					end;
+	
+					pruntax ./!;									/* PRUNE ALL EXCEPT TRIPLET TAXA AND ROOT */
+					col-;
+
+
+						       /* =============ATTENTION THIS IS WHERE THE CONSENSUS METHOD IS DEFINED, THIS HAS BEEN CHANGED FROM THE ITERPCR ORIGINAL THAT USES STRICT CONSENSUS HERE========= */				
+					set numoftrees ntrees+1;
+					maj*;
+
+					if (tnodes['numoftrees'] >= 2)
+				
+						set list_freq freqlist;
+						set freqpcr 'list_freq['firstnode']' / 100;					
+						col+;
+						
+						
+						set pcr[#2] += 'freqpcr';						/* ADD TRIPLET IN AGREEMENT */
+						set pcr[#3] += 'freqpcr';						/* ADD TRIPLET IN AGREEMENT */
+						set pcr[#4] += 'freqpcr';						/* ADD TRIPLET IN AGREEMENT */
+					end;
+					k0; taxcode+.;
+
+				stop;
+			stop;												
+		end;
+		
+		set agreecount 'pcr[#2]';
+		set pcr[#2] ('pcr[#2]'/'tripletcount');			/* SET PCR FOR CURRENT DESCENDANT */
+
+		if ('pcr[#2]' < 'minpcr')
+			set minpcr 'pcr[#2]';							/* CHECK & SET MINPCR OF THIS POLYTOMY */
+		end;
+		if ('pcr[#2]' > 'maxpcr')		
+			set maxpcr 'pcr[#2]';							/* CHECK & SET MAXPCR OF THIS POLYTOMY */
+		end;
+	stop;										/* END OF TRIPLET EVALUATION FOR ALL DESC OF CURRENT POLYTOMY */
+	
+	proc nel.tre;
+
+
+	if ('maxpcr' == 'minpcr')					/* ALL DESC NODES HAVE EQUAL PCR!!! */
+		continue;								/* GO ON WITH NEXT NODE */
+	end;
+
+
+	loop 0 ('ancdegree'-1)						/* STORE TAXA OF THIS NODE WITH MINPCR FOR PRUNNING */
+		if ('pcr[#2]' == 'minpcr')
+			set branchtoprune ++;
+			if ('clipclade[#2]' == 0)
+				set toprune['prunecount'] 'descendants[#2]';		/* STORE TERMINAL TAXA */
+				set prunedtaxa['countprune'] 'descendants[#2]';		/* ADD TAXA TO LIST OF ALL PRUNED TAXA */
+				set prunecount ++;									/* COUNT THE NUMBER OF PRUNED TAXA FOR THIS ITERATION */
+				set countprune ++;									/* COUNT THE NUMBER OF TOTAL PRUNED TAXA */
+				set prunedmiss['prunedmisscount'] 'descendants[#2]';
+				set indiprunmarker['prunedmisscount'] 0;
+				set prunedmisscount ++;
+			else
+				if ('maxtoclip' == 0) 								/* SET LIMIT OF NODE SIZE TO PRUNE */
+					set limit 'ancdegree';								/* DEGREE OF POLYTOMY */
+				else
+					set limit 'maxtoclip';								/* USER INPUT VALUE */
+				end;
+				set nodesize numdes[0 'clipclade[#2]'];
+				if ('nodesize' <= 'limit')		 					/* PRUNE DESC OF NODE WHEN THEY ARE LESS THAN LIMIT VALUE */
+					agroup -0;
+					travtree up terms 0 'clipclade[#2]' desact 
+						if ('desact' <= ntax)
+							agroup >0 (node_desc) 'desact';
+							set toprune['prunecount'] 'desact'; 			/* STORE ALL DESC OF NODE TO PRUNE */
+							set prunecount ++;								/* COUNT THE NUMBER OF PRUNED TAXA FOR THIS ITERATION */
+							set prunedtaxa['countprune'] 'desact';			/* ADD TAXA TO LIST OF ALL PRUNED TAXA */
+							set countprune ++;								/* COUNT THE NUMBER OF TOTAL PRUNED TAXA */
+						end;
+					endtrav;
+
+					fo+ [@0 'clipclade[#2]'];
+					k0; sho %1.nel.ctf;
+					if (mono[0] == 1)
+						set prunedmiss['prunedmisscount'] comnod [0 {0}];
+						set indiprunmarker['prunedmisscount'] 2;
+						set prunedmisscount ++;
+					else
+						agroup ='agrcount' {0};
+						set prunedmiss['prunedmisscount'] 'agrcount';
+						set indiprunmarker['prunedmisscount'] 1;
+						set prunedmisscount ++;
+						set agrcount ++;
+					end;
+					k0; proc nel.tre;
+				else												/* WHEN IS ABOVE LIMIT VALUE DONT PRUNE BUT STORE FOR DOING MISSING */
+					set branchtoprune --;
+				end;
+			end;
+		end;
+	stop;
+
+stop;										/* END OF EVALUATION OF ALL NODES  */
+
+
+if ('prunecount' == 0)						/* STOPPING RULE: WHEN NO MORE TAXA TO PRUNE */
+	if ('lastrun' == 1)
+		set nomore 1;
+	end;
+	set lastrun 1;
+	procedure /;
+end;
+
+macfloat 0;
+
+
+
+set prunecount --;
+loop 0 'prunecount'							/* LIST TAXA TO PRUNE */
+	log+ among.out; 
+		quote 'toprune[#1]' ;
+	log/;	
+stop;
+
+
+k0; proc %1.tre;
+taxcode - 'toprune[0-'prunecount']';		/* PRUNE TAXA AND SAVE PRUNNED TREES FOR NEXT ITERATION */
+pruntax ./!;										
+tsave* %1.tre; save; ts/;
+
+
+k0;
+proc/;

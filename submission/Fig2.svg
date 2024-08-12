@@ -1,0 +1,69 @@
+
+
+<svg width="900" height="900" 	xmlns="http://www.w3.org/2000/svg"> 
+
+
+<text x="33" y="13" fill="black" >Osmundaceae  </text> 
+<rect width="40" height="40" x="20" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="61" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="101" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="20" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="61" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="101" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+
+<text x="233" y="13" fill="black" >Osmundoideae  </text> 
+<rect width="40" height="40" x="220" y="25" stroke="black" fill="rgb(130,130,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="261" y="25" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="301" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="220" y="66" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="261" y="66" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="301" y="66" stroke="black" fill="rgb(130,130,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+
+<text x="433" y="13" fill="black" >Thamnospteroideae  </text> 
+<rect width="40" height="40" x="420" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="461" y="25" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="501" y="25" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="420" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="461" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="501" y="66" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+
+<text x="33" y="213" fill="black" >Guaireaceae  </text> 
+<rect width="40" height="40" x="20" y="225" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="61" y="225" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="101" y="225" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="20" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="61" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="101" y="266" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+
+<text x="233" y="213" fill="black" >Guaireoideae  </text> 
+<rect width="40" height="40" x="220" y="225" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="261" y="225" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="301" y="225" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="220" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="261" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="301" y="266" stroke="black" fill="rgb(255,255,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+
+<text x="433" y="213" fill="black" >Itopsidemoideae  </text> 
+<rect width="40" height="40" x="420" y="225" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="461" y="225" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="501" y="225" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/>
+<rect width="40" height="40" x="420" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="461" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+<rect width="40" height="40" x="501" y="266" stroke="black" fill="rgb(65,65,255)" style="fill-opacity:1;stroke-opacity:1"/> 
+
+<text x="603 " y="120 " fill="black" >Scale </text> 
+ <defs> 
+  <linearGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%" > 
+   <stop offset="0%" style="stop-color:rgb(65,65,255)"/> 
+   <stop offset="100%" style="stop-color:rgb(255,255,255)"/> 
+  </linearGradient> 
+ </defs> 
+<rect width="40" height="80" x="601"  y="125" fill="url(#grad1)" /> 
+<text  fill="black" font-size="10" font-family="Verdana" x="643" y="130" >-0%taxon added/extracted </text> 
+<text  fill="black" font-size="10" font-family="Verdana" x="643" y="211" >-100%taxon added/extracted </text> 
+</svg>

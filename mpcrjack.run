@@ -1,42 +1,65 @@
 macro = ;
-var :
-crepl
-;
+
+p strict_consensus_pruned_dep.tre ;
+
+agroup =0 (pruned_strict_consensus_improvement) ;
+loop 0 ntax
+	if(!isintree[0 #1])
+		agroup >0 #1 ; 
+		end
+	stop
+	k0 ;
+
+
+var : crepl ;
+
 hold 1500 / 1500 ;
 tgr - . ;
 
 set crepl 0 ;
-resample repl 100 boot freq allow 
+resample repl 100 boot freq savetrees allow 
 [
 	set crepl ++ ;
 	k0 ;
-	mult 10 ;
+	mult 10 = tbr ;
+
+
+	pcrprune =2 /\ >1 ;
+
 	tgr ='crepl' . ;
-	tv > . ;
+	tv > / ;
 ]
 ;
 
-tv < ; 
-tgr ; 
+k0;
+tv < ;  
 collap-;
 
-/* unstable within replicates, seeking for improvements in the strict consensus tree within each replicate */
-loop 1 'crepl'
-	pcrprune :50 {#1}/\ >0 ;
-	stop
-
-
-	/* unstable amongst replicates but seeking for improvements in the majority consensus tree */
-	pcrprune :50 (majority 50) ./\ >1 ; 
-
+majo /{0};
+majo /{1};
 
 
 set crepl ++ ;
-tgr ='crepl' . ;
-agr =2 {0} {1} ;
+tgr ='crepl' nod>50 ;
+majo {'crepl'}/;
+
+/*
+unstable within replicates, seeking for improvements in the strict consensus tree within each replicate 
+loop 1 'crepl'
+	pcrprune :75 {#1}/\ >1 ;
+	stop
+*/
+
+/* unstable amongst replicates but seeking for improvements in the majority consensus tree */
+pcrprune =2 :75 (majority 50) ./\ >2 ; 
 
 
-prupdn 2 3 :50 * ./ ;
+agr =3 {0} {1} {2} ;
+
+agr; 
 
 macro - ;
 p/;
+
+
+prupdn 3 4 :100 !10 * ./  ;

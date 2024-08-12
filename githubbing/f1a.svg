@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<svg width="1146" height="2228" xmlns="http://www.w3.org/2000/svg">
+<g stroke-width="2" stroke="black" font-family="Verdana" font-size="20">
+<line x1="391" y1="1235" x2="371" y2="1235" />
+<line x1="471" y1="1475" x2="451" y2="1475" />
+<line x1="602" y1="1695" x2="551" y2="1695" />
+<line x1="551" y1="1715" x2="531" y2="1715" />
+<line x1="571" y1="1735" x2="551" y2="1735" />
+<line x1="451" y1="1460" x2="431" y2="1460" />
+<line x1="382" y1="1195" x2="331" y2="1195" />
+<line x1="511" y1="1667" x2="491" y2="1667" />
+<line x1="531" y1="1690" x2="511" y2="1690" />
+<line x1="391" y1="1040" x2="371" y2="1040" />
+<line x1="411" y1="1055" x2="391" y2="1055" />
+<line x1="371" y1="1409" x2="351" y2="1409" />
+<line x1="391" y1="1433" x2="371" y2="1433" />
+<line x1="411" y1="1461" x2="391" y2="1461" />
+<line x1="431" y1="1497" x2="411" y2="1497" />
+<line x1="451" y1="1535" x2="431" y2="1535" />
+<line x1="471" y1="1565" x2="451" y2="1565" />
+<line x1="491" y1="1606" x2="471" y2="1606" />
+<line x1="511" y1="1605" x2="491" y2="1605" />
+<line x1="371" y1="1071" x2="351" y2="1071" />
+<line x1="391" y1="1102" x2="371" y2="1102" />
+<line x1="411" y1="1120" x2="391" y2="1120" />
+<line x1="431" y1="1135" x2="411" y2="1135" />
+<line x1="251" y1="575" x2="231" y2="575" />
+<line x1="271" y1="340" x2="251" y2="340" />
+<line x1="291" y1="355" x2="271" y2="355" />
+<line x1="391" y1="980" x2="371" y2="980" />
+<line x1="411" y1="995" x2="391" y2="995" />
+<line x1="331" y1="715" x2="311" y2="715" />
+<line x1="291" y1="711" x2="271" y2="711" />
+<line x1="311" y1="738" x2="291" y2="738" />
+<line x1="331" y1="762" x2="311" y2="762" />
+<line x1="351" y1="780" x2="331" y2="780" />
+<line x1="371" y1="795" x2="351" y2="795" />
+<line x1="442" y1="1275" x2="391" y2="1275" />
+<line x1="231" y1="560" x2="211" y2="560" />
+<line x1="331" y1="843" x2="311" y2="843" />
+<line x1="351" y1="862" x2="331" y2="862" />
+<line x1="371" y1="880" x2="351" y2="880" />
+<line x1="391" y1="895" x2="371" y2="895" />
+<line x1="311" y1="1215" x2="291" y2="1215" />
+<line x1="331" y1="1266" x2="311" y2="1266" />
+<line x1="351" y1="1337" x2="331" y2="1337" />
+<line x1="371" y1="1266" x2="351" y2="1266" />
+<line x1="391" y1="1298" x2="371" y2="1298" />
+<line x1="411" y1="1322" x2="391" y2="1322" />
+<line x1="431" y1="1340" x2="411" y2="1340" />
+<line x1="451" y1="1355" x2="431" y2="1355" />
+<line x1="271" y1="885" x2="251" y2="885" />
+<line x1="291" y1="1060" x2="271" y2="1060" />
+<line x1="311" y1="906" x2="291" y2="906" />
+<line x1="331" y1="970" x2="311" y2="970" />
+<line x1="351" y1="1016" x2="331" y2="1016" />
+<line x1="371" y1="962" x2="351" y2="962" />
+<line x1="251" y1="475" x2="231" y2="475" />
+<line x1="251" y1="615" x2="231" y2="615" />
+<line x1="211" y1="626" x2="191" y2="626" />
+<line x1="231" y1="692" x2="211" y2="692" />
+<line x1="251" y1="770" x2="231" y2="770" />
+<line x1="271" y1="655" x2="251" y2="655" />
+<line x1="231" y1="460" x2="211" y2="460" />
+<line x1="211" y1="422" x2="191" y2="422" />
+<line x1="191" y1="570" x2="171" y2="570" />
+<line x1="211" y1="515" x2="191" y2="515" />
+<line x1="171" y1="461" x2="151" y2="461" />
+<line x1="191" y1="353" x2="171" y2="353" />
+<line x1="211" y1="284" x2="191" y2="284" />
+<line x1="231" y1="303" x2="211" y2="303" />
+<line x1="251" y1="322" x2="231" y2="322" />
+<line x1="111" y1="75" x2="91" y2="75" />
+<line x1="91" y1="60" x2="71" y2="60" />
+<line x1="151" y1="353" x2="131" y2="353" />
+<line x1="71" y1="105" x2="7" y2="105" />
+<line x1="91" y1="151" x2="71" y2="151" />
+<line x1="111" y1="197" x2="91" y2="197" />
+<line x1="131" y1="269" x2="111" y2="269" />
+<line x1="151" y1="185" x2="131" y2="185" />
+<line x1="7" y1="65" x2="5" y2="65" />
+<line x1="411" y1="1225" x2="391" y2="1225" />
+<line x1="411" y1="1245" x2="391" y2="1245" />
+<line x1="431" y1="1045" x2="411" y2="1045" />
+<line x1="431" y1="1105" x2="411" y2="1105" />
+<line x1="451" y1="1125" x2="431" y2="1125" />
+<line x1="411" y1="1085" x2="391" y2="1085" />
+<line x1="411" y1="1025" x2="391" y2="1025" />
+<line x1="491" y1="1465" x2="471" y2="1465" />
+<line x1="431" y1="1425" x2="411" y2="1425" />
+<line x1="491" y1="1485" x2="471" y2="1485" />
+<line x1="622" y1="1685" x2="602" y2="1685" />
+<line x1="622" y1="1705" x2="602" y2="1705" />
+<line x1="591" y1="1725" x2="571" y2="1725" />
+<line x1="591" y1="1745" x2="571" y2="1745" />
+<line x1="402" y1="1185" x2="382" y2="1185" />
+<line x1="391" y1="1385" x2="371" y2="1385" />
+<line x1="491" y1="1525" x2="471" y2="1525" />
+<line x1="471" y1="1445" x2="451" y2="1445" />
+<line x1="351" y1="825" x2="331" y2="825" />
+<line x1="371" y1="845" x2="351" y2="845" />
+<line x1="411" y1="885" x2="391" y2="885" />
+<line x1="411" y1="1405" x2="391" y2="1405" />
+<line x1="471" y1="1505" x2="451" y2="1505" />
+<line x1="402" y1="1205" x2="382" y2="1205" />
+<line x1="511" y1="1545" x2="491" y2="1545" />
+<line x1="511" y1="1565" x2="491" y2="1565" />
+<line x1="531" y1="1645" x2="511" y2="1645" />
+<line x1="551" y1="1665" x2="531" y2="1665" />
+<line x1="531" y1="1585" x2="511" y2="1585" />
+<line x1="531" y1="1605" x2="511" y2="1605" />
+<line x1="431" y1="1065" x2="411" y2="1065" />
+<line x1="351" y1="925" x2="331" y2="925" />
+<line x1="391" y1="865" x2="371" y2="865" />
+<line x1="411" y1="965" x2="391" y2="965" />
+<line x1="531" y1="1625" x2="511" y2="1625" />
+<line x1="271" y1="565" x2="251" y2="565" />
+<line x1="471" y1="1345" x2="451" y2="1345" />
+<line x1="462" y1="1265" x2="442" y2="1265" />
+<line x1="451" y1="1145" x2="431" y2="1145" />
+<line x1="371" y1="765" x2="351" y2="765" />
+<line x1="311" y1="345" x2="291" y2="345" />
+<line x1="291" y1="325" x2="271" y2="325" />
+<line x1="271" y1="585" x2="251" y2="585" />
+<line x1="311" y1="365" x2="291" y2="365" />
+<line x1="351" y1="705" x2="331" y2="705" />
+<line x1="311" y1="685" x2="291" y2="685" />
+<line x1="331" y1="1165" x2="311" y2="1165" />
+<line x1="391" y1="785" x2="371" y2="785" />
+<line x1="351" y1="745" x2="331" y2="745" />
+<line x1="431" y1="985" x2="411" y2="985" />
+<line x1="451" y1="1325" x2="431" y2="1325" />
+<line x1="431" y1="1005" x2="411" y2="1005" />
+<line x1="231" y1="385" x2="211" y2="385" />
+<line x1="111" y1="105" x2="91" y2="105" />
+<line x1="431" y1="1305" x2="411" y2="1305" />
+<line x1="351" y1="725" x2="331" y2="725" />
+<line x1="391" y1="805" x2="371" y2="805" />
+<line x1="462" y1="1285" x2="442" y2="1285" />
+<line x1="251" y1="545" x2="231" y2="545" />
+<line x1="411" y1="905" x2="391" y2="905" />
+<line x1="271" y1="605" x2="251" y2="605" />
+<line x1="471" y1="1365" x2="451" y2="1365" />
+<line x1="391" y1="945" x2="371" y2="945" />
+<line x1="271" y1="465" x2="251" y2="465" />
+<line x1="271" y1="485" x2="251" y2="485" />
+<line x1="271" y1="625" x2="251" y2="625" />
+<line x1="291" y1="645" x2="271" y2="645" />
+<line x1="291" y1="665" x2="271" y2="665" />
+<line x1="231" y1="405" x2="211" y2="405" />
+<line x1="251" y1="445" x2="231" y2="445" />
+<line x1="131" y1="125" x2="111" y2="125" />
+<line x1="171" y1="145" x2="151" y2="145" />
+<line x1="171" y1="165" x2="151" y2="165" />
+<line x1="171" y1="185" x2="151" y2="185" />
+<line x1="171" y1="205" x2="151" y2="205" />
+<line x1="231" y1="425" x2="211" y2="425" />
+<line x1="27" y1="25" x2="7" y2="25" />
+<line x1="231" y1="505" x2="211" y2="505" />
+<line x1="231" y1="525" x2="211" y2="525" />
+<line x1="231" y1="265" x2="211" y2="265" />
+<line x1="251" y1="285" x2="231" y2="285" />
+<line x1="271" y1="305" x2="251" y2="305" />
+<line x1="131" y1="65" x2="111" y2="65" />
+<line x1="131" y1="85" x2="111" y2="85" />
+<line x1="111" y1="45" x2="91" y2="45" />
+<line x1="171" y1="245" x2="151" y2="245" />
+<line x1="171" y1="225" x2="151" y2="225" />
+<line x1="392" y1="1225" x2="392" y2="1245" />
+<line x1="472" y1="1465" x2="472" y2="1485" />
+<line x1="603" y1="1685" x2="603" y2="1705" />
+<line x1="552" y1="1695" x2="552" y2="1735" />
+<line x1="572" y1="1725" x2="572" y2="1745" />
+<line x1="452" y1="1445" x2="452" y2="1475" />
+<line x1="383" y1="1185" x2="383" y2="1205" />
+<line x1="512" y1="1645" x2="512" y2="1690" />
+<line x1="532" y1="1665" x2="532" y2="1715" />
+<line x1="392" y1="1025" x2="392" y2="1055" />
+<line x1="412" y1="1045" x2="412" y2="1065" />
+<line x1="372" y1="1385" x2="372" y2="1433" />
+<line x1="392" y1="1405" x2="392" y2="1461" />
+<line x1="412" y1="1425" x2="412" y2="1497" />
+<line x1="432" y1="1460" x2="432" y2="1535" />
+<line x1="452" y1="1505" x2="452" y2="1565" />
+<line x1="472" y1="1525" x2="472" y2="1606" />
+<line x1="492" y1="1545" x2="492" y2="1667" />
+<line x1="512" y1="1585" x2="512" y2="1625" />
+<line x1="372" y1="1040" x2="372" y2="1102" />
+<line x1="392" y1="1085" x2="392" y2="1120" />
+<line x1="412" y1="1105" x2="412" y2="1135" />
+<line x1="432" y1="1125" x2="432" y2="1145" />
+<line x1="252" y1="565" x2="252" y2="585" />
+<line x1="272" y1="325" x2="272" y2="355" />
+<line x1="292" y1="345" x2="292" y2="365" />
+<line x1="392" y1="965" x2="392" y2="995" />
+<line x1="412" y1="985" x2="412" y2="1005" />
+<line x1="332" y1="705" x2="332" y2="725" />
+<line x1="292" y1="685" x2="292" y2="738" />
+<line x1="312" y1="715" x2="312" y2="762" />
+<line x1="332" y1="745" x2="332" y2="780" />
+<line x1="352" y1="765" x2="352" y2="795" />
+<line x1="372" y1="785" x2="372" y2="805" />
+<line x1="443" y1="1265" x2="443" y2="1285" />
+<line x1="232" y1="545" x2="232" y2="575" />
+<line x1="332" y1="825" x2="332" y2="862" />
+<line x1="352" y1="845" x2="352" y2="880" />
+<line x1="372" y1="865" x2="372" y2="895" />
+<line x1="392" y1="885" x2="392" y2="905" />
+<line x1="312" y1="1165" x2="312" y2="1266" />
+<line x1="332" y1="1195" x2="332" y2="1337" />
+<line x1="352" y1="1266" x2="352" y2="1409" />
+<line x1="372" y1="1235" x2="372" y2="1298" />
+<line x1="392" y1="1275" x2="392" y2="1322" />
+<line x1="412" y1="1305" x2="412" y2="1340" />
+<line x1="432" y1="1325" x2="432" y2="1355" />
+<line x1="452" y1="1345" x2="452" y2="1365" />
+<line x1="272" y1="711" x2="272" y2="1060" />
+<line x1="292" y1="906" x2="292" y2="1215" />
+<line x1="312" y1="843" x2="312" y2="970" />
+<line x1="332" y1="925" x2="332" y2="1016" />
+<line x1="352" y1="962" x2="352" y2="1071" />
+<line x1="372" y1="945" x2="372" y2="980" />
+<line x1="252" y1="465" x2="252" y2="485" />
+<line x1="252" y1="605" x2="252" y2="625" />
+<line x1="212" y1="560" x2="212" y2="692" />
+<line x1="232" y1="615" x2="232" y2="770" />
+<line x1="252" y1="655" x2="252" y2="885" />
+<line x1="272" y1="645" x2="272" y2="665" />
+<line x1="232" y1="445" x2="232" y2="475" />
+<line x1="212" y1="385" x2="212" y2="460" />
+<line x1="192" y1="515" x2="192" y2="626" />
+<line x1="212" y1="505" x2="212" y2="525" />
+<line x1="172" y1="353" x2="172" y2="570" />
+<line x1="192" y1="284" x2="192" y2="422" />
+<line x1="212" y1="265" x2="212" y2="303" />
+<line x1="232" y1="285" x2="232" y2="322" />
+<line x1="252" y1="305" x2="252" y2="340" />
+<line x1="112" y1="65" x2="112" y2="85" />
+<line x1="92" y1="45" x2="92" y2="75" />
+<line x1="152" y1="245" x2="152" y2="461" />
+<line x1="72" y1="60" x2="72" y2="151" />
+<line x1="92" y1="105" x2="92" y2="197" />
+<line x1="112" y1="125" x2="112" y2="269" />
+<line x1="132" y1="185" x2="132" y2="353" />
+<line x1="152" y1="145" x2="152" y2="225" />
+<line x1="8" y1="25" x2="8" y2="105" />
+<defs>
+    <filter x="0" y="0.0" width="1" height="1.0" id="solid">
+      <feFlood flood-color="white"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+<text x="417" y="1229" stroke-width="1">Millerocaulis_zamunerae</text>
+<text x="417" y="1249" stroke-width="1">Millerocaulis_australis_Vera2010</text>
+<text x="437" y="1049" stroke-width="1">Todea_barbara</text>
+<text x="437" y="1109" stroke-width="1">Leptopteris_superba</text>
+<text x="457" y="1129" stroke-width="1">Leptopteris_wilkesiana</text>
+<text x="417" y="1089" stroke-width="1">Leptopteris_hymenophylloides</text>
+<text x="417" y="1029" stroke-width="1">Leptopteris_fraseri</text>
+<text x="497" y="1469" stroke-width="1">Osmunda_regalis</text>
+<text x="437" y="1429" stroke-width="1">Osmunda_lancea</text>
+<text x="497" y="1489" stroke-width="1">Osmunda_japonica</text>
+<text x="628" y="1689" stroke-width="1">Plenasium_vachellii</text>
+<text x="628" y="1709" stroke-width="1">Plenasium_javanica</text>
+<text x="597" y="1729" stroke-width="1">Plenasium_bromeliifolia</text>
+<text x="597" y="1749" stroke-width="1">Plenasium_banksiifolia</text>
+<text x="408" y="1189" stroke-width="1">Claytosmunda_claytoniana</text>
+<text x="397" y="1389" stroke-width="1">Claytosmunda_wehrii</text>
+<text x="497" y="1529" stroke-width="1">Osmunda_shimokawaensis</text>
+<text x="477" y="1449" stroke-width="1">Osmunda_iliaensis</text>
+<text x="357" y="829" stroke-width="1">Osmundastrum_cinnamomea_NeogeneJapan</text>
+<text x="377" y="849" stroke-width="1">Osmundastrum_cinnamomea_NeogeneUSA</text>
+<text x="417" y="889" stroke-width="1">Osmundastrum_precinnamomea</text>
+<text x="417" y="1409" stroke-width="1">Osmunda_pluma</text>
+<text x="477" y="1509" stroke-width="1">Osmunda_oregonensis</text>
+<text x="408" y="1209" stroke-width="1">Claytosmunda_nathorstii</text>
+<text x="517" y="1549" stroke-width="1">Plenasium_chandleri</text>
+<text x="517" y="1569" stroke-width="1">Plenasium_dowkeri_Chandler</text>
+<text x="537" y="1649" stroke-width="1">Plenasium_dowkeri_Miller</text>
+<text x="557" y="1669" stroke-width="1">Plenasium_arnoldii</text>
+<text x="537" y="1589" stroke-width="1">Plenasium_moorei</text>
+<text x="537" y="1609" stroke-width="1">Plenasium_bransonii</text>
+<text x="437" y="1069" stroke-width="1">Todea_tidwellii</text>
+<text x="357" y="929" stroke-width="1">Osmunda_kidstonii</text>
+<text x="397" y="869" stroke-width="1">Osmunda_cinnamomea_CretaceousCanada</text>
+<text x="417" y="969" stroke-width="1">Claytosmunda_embreei</text>
+<text x="537" y="1629" stroke-width="1">Plenasium_nebraskensis</text>
+<text x="277" y="569" stroke-width="1">Claytosmunda_tekelili</text>
+<text x="477" y="1349" stroke-width="1">Millerocaulis_sahnii</text>
+<text x="468" y="1269" stroke-width="1">Millerocaulis_australis</text>
+<text x="457" y="1149" stroke-width="1">Leptoperis_estipularis</text>
+<text x="377" y="769" stroke-width="1">Claytosmunda_johnstonii</text>
+<text x="317" y="349" stroke-width="1">Osmundacaulis_tasmanensis</text>
+<text x="297" y="329" stroke-width="1">Osmundacaulis_richmondii</text>
+<text x="277" y="589" stroke-width="1">Osmundacaulis_janae</text>
+<text x="317" y="369" stroke-width="1">Osmundacaulis_andrewii</text>
+<text x="357" y="709" stroke-width="1">Claytosmunda_wangii</text>
+<text x="317" y="689" stroke-width="1">Claytosmunda_plumites</text>
+<text x="337" y="1169" stroke-width="1">Osmundastrum_pulchella</text>
+<text x="397" y="789" stroke-width="1">Claytosmunda_liaoningensis</text>
+<text x="357" y="749" stroke-width="1">Claytosmunda_chengii</text>
+<text x="437" y="989" stroke-width="1">Millerocaulis_limewoodensis</text>
+<text x="457" y="1329" stroke-width="1">Millerocaulis_dunlopii</text>
+<text x="437" y="1009" stroke-width="1">Millerocaulis_chubutensis</text>
+<text x="237" y="389" stroke-width="1">Lunea_jonesii</text>
+<text x="117" y="109" stroke-width="1">Grammatocaulis_donponii</text>
+<text x="437" y="1309" stroke-width="1">Millerocaulis_wrightii</text>
+<text x="357" y="729" stroke-width="1">Millerocaulis_wadei</text>
+<text x="397" y="809" stroke-width="1">Millerocaulis_richmondii</text>
+<text x="468" y="1289" stroke-width="1">Millerocaulis_patagonicus</text>
+<text x="257" y="549" stroke-width="1">Millerocaulis_macromedullosus</text>
+<text x="417" y="909" stroke-width="1">Millerocaulis_gibbianus</text>
+<text x="277" y="609" stroke-width="1">Millerocaulis_broganii</text>
+<text x="477" y="1369" stroke-width="1">Millerocaulis_aucklandicus</text>
+<text x="397" y="949" stroke-width="1">Osmundastrum_indentata</text>
+<text x="277" y="469" stroke-width="1">Itopsidema_vancleavei</text>
+<text x="277" y="489" stroke-width="1">Donwelliacaulis_chlouberii</text>
+<text x="277" y="629" stroke-width="1">Millerocaulis_woolfei</text>
+<text x="297" y="649" stroke-width="1">Millerocaulis_lutziae</text>
+<text x="297" y="669" stroke-width="1">Claytosmunda_beardmorensis</text>
+<text x="237" y="409" stroke-width="1">Zhongmingella_plenasioides</text>
+<text x="257" y="449" stroke-width="1">Tiania_yunnanensis</text>
+<text x="137" y="129" stroke-width="1">Thamnopteris_splendida</text>
+<text x="177" y="149" stroke-width="1">Thamnopteris_schlechtendalii</text>
+<text x="177" y="169" stroke-width="1">Thamnopteris_kidstonii</text>
+<text x="177" y="189" stroke-width="1">Thamnopteris_kazanensis</text>
+<text x="177" y="209" stroke-width="1">Thamnopteris_gwynnevaughanii</text>
+<text x="237" y="429" stroke-width="1">Shuichengella_primitiva</text>
+<text x="33" y="29" stroke-width="1">Rastropteris_pinquanensis</text>
+<text x="237" y="509" stroke-width="1">Palaeosmunda_williamsii</text>
+<text x="237" y="529" stroke-width="1">Palaeosmunda_playfordii</text>
+<text x="237" y="269" stroke-width="1">Guairea_millerii</text>
+<text x="257" y="289" stroke-width="1">Guairea_carnierii</text>
+<text x="277" y="309" stroke-width="1">Guairea_brasiliensis</text>
+<text x="137" y="69" stroke-width="1">Grammatopteris_freitasii</text>
+<text x="137" y="89" stroke-width="1">Grammatopteris_rigollotii</text>
+<text x="117" y="49" stroke-width="1">Grammatopteris_baldaufii</text>
+<text x="177" y="249" stroke-width="1">Chasmatopteris_principalis</text>
+<text x="177" y="229" stroke-width="1">Bathypteris_rhomboidea</text>
+</g>
+<g stroke-width="2" stroke="black" font-family="Verdana" font-style="regular" font-size="20">
+<text filter="url(#solid)" x="377" y="1236" stroke-width="1">7</text>
+<text filter="url(#solid)" x="457" y="1476" stroke-width="1">4</text>
+<text filter="url(#solid)" x="557" y="1696" stroke-width="1">11</text>
+<text filter="url(#solid)" x="537" y="1716" stroke-width="1">3</text>
+<text filter="url(#solid)" x="557" y="1736" stroke-width="1">3</text>
+<text filter="url(#solid)" x="437" y="1461" stroke-width="1">4</text>
+<text filter="url(#solid)" x="337" y="1196" stroke-width="1">11</text>
+<text filter="url(#solid)" x="497" y="1668" stroke-width="1">3</text>
+<text filter="url(#solid)" x="517" y="1691" stroke-width="1">3</text>
+<text filter="url(#solid)" x="377" y="1041" stroke-width="1">4</text>
+<text filter="url(#solid)" x="397" y="1056" stroke-width="1">4</text>
+<text filter="url(#solid)" x="357" y="1410" stroke-width="1">3</text>
+<text filter="url(#solid)" x="377" y="1434" stroke-width="1">3</text>
+<text filter="url(#solid)" x="397" y="1462" stroke-width="1">3</text>
+<text filter="url(#solid)" x="417" y="1498" stroke-width="1">3</text>
+<text filter="url(#solid)" x="437" y="1536" stroke-width="1">3</text>
+<text filter="url(#solid)" x="457" y="1566" stroke-width="1">3</text>
+<text filter="url(#solid)" x="477" y="1607" stroke-width="1">3</text>
+<text filter="url(#solid)" x="497" y="1606" stroke-width="1">7</text>
+<text filter="url(#solid)" x="357" y="1072" stroke-width="1">4</text>
+<text filter="url(#solid)" x="377" y="1103" stroke-width="1">6</text>
+<text filter="url(#solid)" x="397" y="1121" stroke-width="1">6</text>
+<text filter="url(#solid)" x="417" y="1136" stroke-width="1">6</text>
+<text filter="url(#solid)" x="237" y="576" stroke-width="1">4</text>
+<text filter="url(#solid)" x="257" y="341" stroke-width="1">2</text>
+<text filter="url(#solid)" x="277" y="356" stroke-width="1">2</text>
+<text filter="url(#solid)" x="377" y="981" stroke-width="1">4</text>
+<text filter="url(#solid)" x="397" y="996" stroke-width="1">4</text>
+<text filter="url(#solid)" x="317" y="716" stroke-width="1">1</text>
+<text filter="url(#solid)" x="277" y="712" stroke-width="1">1</text>
+<text filter="url(#solid)" x="297" y="739" stroke-width="1">1</text>
+<text filter="url(#solid)" x="317" y="763" stroke-width="1">2</text>
+<text filter="url(#solid)" x="337" y="781" stroke-width="1">2</text>
+<text filter="url(#solid)" x="357" y="796" stroke-width="1">2</text>
+<text filter="url(#solid)" x="397" y="1276" stroke-width="1">10</text>
+<text filter="url(#solid)" x="217" y="561" stroke-width="1">4</text>
+<text filter="url(#solid)" x="317" y="844" stroke-width="1">1</text>
+<text filter="url(#solid)" x="337" y="863" stroke-width="1">1</text>
+<text filter="url(#solid)" x="357" y="881" stroke-width="1">1</text>
+<text filter="url(#solid)" x="377" y="896" stroke-width="1">1</text>
+<text filter="url(#solid)" x="297" y="1216" stroke-width="1">1</text>
+<text filter="url(#solid)" x="317" y="1267" stroke-width="1">1</text>
+<text filter="url(#solid)" x="337" y="1338" stroke-width="1">1</text>
+<text filter="url(#solid)" x="357" y="1267" stroke-width="1">1</text>
+<text filter="url(#solid)" x="377" y="1299" stroke-width="1">1</text>
+<text filter="url(#solid)" x="397" y="1323" stroke-width="1">1</text>
+<text filter="url(#solid)" x="417" y="1341" stroke-width="1">1</text>
+<text filter="url(#solid)" x="437" y="1356" stroke-width="1">1</text>
+<text filter="url(#solid)" x="257" y="886" stroke-width="1">1</text>
+<text filter="url(#solid)" x="277" y="1061" stroke-width="1">1</text>
+<text filter="url(#solid)" x="297" y="907" stroke-width="1">1</text>
+<text filter="url(#solid)" x="317" y="971" stroke-width="1">3</text>
+<text filter="url(#solid)" x="337" y="1017" stroke-width="1">3</text>
+<text filter="url(#solid)" x="357" y="963" stroke-width="1">3</text>
+<text filter="url(#solid)" x="237" y="476" stroke-width="1">1</text>
+<text filter="url(#solid)" x="237" y="616" stroke-width="1">7</text>
+<text filter="url(#solid)" x="197" y="627" stroke-width="1">3</text>
+<text filter="url(#solid)" x="217" y="693" stroke-width="1">3</text>
+<text filter="url(#solid)" x="237" y="771" stroke-width="1">3</text>
+<text filter="url(#solid)" x="257" y="656" stroke-width="1">1</text>
+<text filter="url(#solid)" x="217" y="461" stroke-width="1">1</text>
+<text filter="url(#solid)" x="197" y="423" stroke-width="1">2</text>
+<text filter="url(#solid)" x="177" y="571" stroke-width="1">1</text>
+<text filter="url(#solid)" x="197" y="516" stroke-width="1">1</text>
+<text filter="url(#solid)" x="157" y="462" stroke-width="1">2</text>
+<text filter="url(#solid)" x="177" y="354" stroke-width="1">3</text>
+<text filter="url(#solid)" x="197" y="285" stroke-width="1">2</text>
+<text filter="url(#solid)" x="217" y="304" stroke-width="1">2</text>
+<text filter="url(#solid)" x="237" y="323" stroke-width="1">1</text>
+<text filter="url(#solid)" x="97" y="76" stroke-width="1">3</text>
+<text filter="url(#solid)" x="77" y="61" stroke-width="1">1</text>
+<text filter="url(#solid)" x="137" y="354" stroke-width="1">1</text>
+<text filter="url(#solid)" x="13" y="106" stroke-width="1">12?</text>
+<text filter="url(#solid)" x="77" y="152" stroke-width="1">4</text>
+<text filter="url(#solid)" x="97" y="198" stroke-width="1">3</text>
+<text filter="url(#solid)" x="117" y="270" stroke-width="1">2</text>
+<text filter="url(#solid)" x="137" y="186" stroke-width="1">1</text>
+</g>
+</svg>

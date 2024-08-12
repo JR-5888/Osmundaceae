@@ -1,0 +1,98 @@
+NON-DEP PRUNED STRICT CONSENSUS TREE: 
+Osmundales (82 taxa): 
+   Tree 0: monophyletic
+Osmundaceae (74 taxa): 
+   Tree 0: not found
+Osmundoideae (61 taxa): 
+   Tree 0: 2 taxa added, 0 subtracted
+      added: 
+         Osmundacaulis_janae, 
+         Osmunda_kidstonii 
+Millerocaulis (17 taxa): 
+   Tree 0: not found
+Osmundeae (42 taxa): 
+   Tree 0: 12 taxa added, 7 subtracted
+      subtracted: 
+         Osmunda_beardmorensis, 
+         Osmunda_chengii, 
+         Osmunda_liaoningensis, 
+         Osmunda_plumites, 
+         Osmunda_wangii, 
+         Osmunda_johnstonii, 
+         Osmunda_tekelili 
+      added: 
+         Millerocaulis_aucklandicus, 
+         Millerocaulis_gibbianus, 
+         Millerocaulis_patagonicus, 
+         Millerocaulis_wrightii, 
+         Millerocaulis_chubutensis, 
+         Millerocaulis_dunlopii, 
+         Millerocaulis_limewoodensis, 
+         Millerocaulis_australis, 
+         Millerocaulis_sahnii, 
+         Osmunda_kidstonii, 
+         Millerocaulis_australis_Vera2010, 
+         Millerocaulis_zamunerae 
+Todeinae (7 taxa): 
+   Tree 0: monophyletic
+Osmundinae (35 taxa): 
+   Tree 0: not found
+Osmundastrum (13 taxa): 
+   Tree 0: not found
+Plenasium (11 taxa): 
+   Tree 0: monophyletic
+Claytosmunda (11 taxa): 
+   Tree 0: not found
+Palaeosmunda (2 taxa): 
+   Tree 0: monophyletic
+Osmundacaulis (5 taxa): 
+   Tree 0: not found
+Thamospteroideae (6 taxa): 
+   Tree 0: not found
+Guaireaceae (8 taxa): 
+   Tree 0: not found
+Guaireoideae (5 taxa): 
+   Tree 0: not found
+Itopsidemoideae (3 taxa): 
+   Tree 0: monophyletic
+ 
+DEP PRUNED STRICT CONSENSUS TREE:
+Osmundales (75 taxa): 
+   Tree 1: monophyletic
+Osmundaceae (67 taxa): 
+   Tree 1: not found
+Osmundoideae (54 taxa): 
+   Tree 1: 1 taxa added, 0 subtracted
+      added: 
+         Osmunda_kidstonii 
+Millerocaulis (25 taxa): 
+   Tree 1: not found
+Osmundeae (27 taxa): 
+   Tree 1: not found
+Todeinae (8 taxa): 
+   Tree 1: 0 taxa added, 1 subtracted
+      subtracted: 
+         Millerocaulis_tuhajkulensis 
+Osmundinae (19 taxa): 
+   Tree 1: not found
+Osmundastrum (9 taxa): 
+   Tree 1: not found
+Plenasium (0 taxa): 
+   Tree 1: not found
+Claytosmunda (10 taxa): 
+   Tree 1: not found
+Palaeosmunda (1 taxa): 
+   Tree 1: not found
+Osmundacaulis (4 taxa): 
+   Tree 1: 0 taxa added, 1 subtracted
+      subtracted: 
+         Osmunda_kidstonii 
+Thamospteroideae (7 taxa): 
+   Tree 1: monophyletic
+Guaireaceae (8 taxa): 
+   Tree 1: not found
+Guaireoideae (5 taxa): 
+   Tree 1: not found
+Itopsidemoideae (3 taxa): 
+   Tree 1: monophyletic
+ 

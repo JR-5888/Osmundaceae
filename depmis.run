@@ -86,7 +86,7 @@ quote :TREATMENT, REPLACED, DISTORTION_COEFFICIENT, RF;
 			
 		loop =cx 0 nchar
 		set ccx #cx;
-			
+
 			if(states['ccx' 'ttx'] == missing)
 				set replacement getrandom[0 (maxstate['ccx'])] ;
 				xread ='ccx' 'ttx' 'replacement' ;

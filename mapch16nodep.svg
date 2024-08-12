@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<svg width="1130" height="694" xmlns="http://www.w3.org/2000/svg">
+<g stroke-width="2" stroke="black" font-family="Verdana" font-size="12">
+<line x1="275" y1="260" x2="255" y2="260" />
+<line x1="295" y1="275" x2="275" y2="275" />
+<line x1="195" y1="140" x2="175" y2="140" />
+<line x1="215" y1="155" x2="195" y2="155" />
+<line x1="255" y1="215" x2="235" y2="215" />
+<line x1="235" y1="375" x2="215" y2="375" />
+<line x1="255" y1="385" x2="235" y2="385" />
+<line x1="295" y1="335" x2="275" y2="335" />
+<line x1="215" y1="313" x2="195" y2="313" />
+<line x1="235" y1="252" x2="215" y2="252" />
+<line x1="255" y1="290" x2="235" y2="290" />
+<line x1="275" y1="320" x2="255" y2="320" />
+<line x1="135" y1="55" x2="115" y2="55" />
+<line x1="115" y1="86" x2="95" y2="86" />
+<line x1="135" y1="117" x2="115" y2="117" />
+<line x1="155" y1="149" x2="135" y2="149" />
+<line x1="175" y1="194" x2="155" y2="194" />
+<line x1="195" y1="249" x2="175" y2="249" />
+<line x1="215" y1="185" x2="195" y2="185" />
+<line x1="95" y1="55" x2="5" y2="55" />
+<line x1="295" y1="245" x2="275" y2="245" />
+<line x1="315" y1="265" x2="295" y2="265" />
+<line x1="315" y1="285" x2="295" y2="285" />
+<line x1="257" y1="365" x2="235" y2="365" />
+<line x1="175" y1="105" x2="155" y2="105" />
+<line x1="217" y1="125" x2="195" y2="125" />
+<line x1="237" y1="145" x2="215" y2="145" />
+<line x1="277" y1="205" x2="255" y2="205" />
+<line x1="237" y1="165" x2="215" y2="165" />
+<line x1="275" y1="225" x2="255" y2="225" />
+<line x1="115" y1="25" x2="95" y2="25" />
+<line x1="317" y1="325" x2="295" y2="325" />
+<line x1="317" y1="345" x2="295" y2="345" />
+<line x1="297" y1="305" x2="275" y2="305" />
+<line x1="155" y1="45" x2="135" y2="45" />
+<line x1="155" y1="65" x2="135" y2="65" />
+<line x1="155" y1="85" x2="135" y2="85" />
+<line x1="276" y1="245" x2="276" y2="275" />
+<line x1="296" y1="265" x2="296" y2="285" />
+<line x1="196" y1="125" x2="196" y2="155" />
+<line x1="216" y1="145" x2="216" y2="165" />
+<line x1="256" y1="205" x2="256" y2="225" />
+<line x1="236" y1="365" x2="236" y2="385" />
+<line x1="296" y1="325" x2="296" y2="345" />
+<line x1="216" y1="252" x2="216" y2="375" />
+<line x1="236" y1="215" x2="236" y2="290" />
+<line x1="256" y1="260" x2="256" y2="320" />
+<line x1="276" y1="305" x2="276" y2="335" />
+<line x1="136" y1="45" x2="136" y2="65" />
+<line x1="116" y1="55" x2="116" y2="117" />
+<line x1="136" y1="85" x2="136" y2="149" />
+<line x1="156" y1="105" x2="156" y2="194" />
+<line x1="176" y1="140" x2="176" y2="249" />
+<line x1="196" y1="185" x2="196" y2="313" />
+<line x1="96" y1="25" x2="96" y2="86" />
+<defs>
+    <filter x="0" y="0.0" width="1" height="1.0" id="solid">
+      <feFlood flood-color="white"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+<text x="301" y="247" stroke-width="1">Osmundacaulis_tehuelchensis</text>
+<text x="321" y="267" stroke-width="1">Osmundacaulis_tasmanensis</text>
+<text x="321" y="287" stroke-width="1">Osmundacaulis_andrewii</text>
+<text x="263" y="367" stroke-width="1">Lunea_jonesii</text>
+<text x="181" y="107" stroke-width="1">Grammatocaulis_donponii</text>
+<text x="223" y="127" stroke-width="1">Itopsidema_vancleavei</text>
+<text x="243" y="147" stroke-width="1">Donwelliacaulis_chlouberii</text>
+<text x="283" y="207" stroke-width="1">Zhongmingella_plenasioides</text>
+<text x="243" y="167" stroke-width="1">Tiania_yunnanensis</text>
+<text x="281" y="227" stroke-width="1">Shuichengella_primitiva</text>
+<text x="121" y="27" stroke-width="1">Rastropteris_pinquanensis</text>
+<text x="323" y="327" stroke-width="1">Guairea_millerii</text>
+<text x="323" y="347" stroke-width="1">Guairea_carnierii</text>
+<text x="303" y="307" stroke-width="1">Guairea_brasiliensis</text>
+<text x="161" y="47" stroke-width="1">Grammatopteris_freitasii</text>
+<text x="161" y="67" stroke-width="1">Grammatopteris_rigollotii</text>
+<text x="161" y="87" stroke-width="1">Grammatopteris_baldaufii</text>
+<text x="259" y="387" stroke-width="1">[Osmundoideae]</text>
+<text x="219" y="187" stroke-width="1">[Bathypteris+Thamnopteroideae]</text>
+</g>
+<g stroke-width="2" stroke="black" font-family="Verdana" font-style="regular" font-size="12">
+<text filter="url(#solid)" x="-9" y="56" stroke-width="1">[homogeneous]</text>
+<text filter="url(#solid)" x="241" y="366" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="201" y="126" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="221" y="146" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="261" y="206" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="221" y="166" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="301" y="326" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="301" y="346" stroke-width="1">[?]</text>
+<text filter="url(#solid)" x="281" y="306" stroke-width="1">[?]</text>
+</g>
+</svg>

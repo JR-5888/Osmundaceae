@@ -1,0 +1,73 @@
+macro = ; 
+macseed 0 ;
+
+var :
+characters_n[3]
+pickedran
+wcount
+xw
+;
+
+set characters_n[0] nchar+1;
+set characters_n[0] '/.0characters_n[0]' ;
+
+rep - ;
+sil = all ;
+loop =rpl 0 0
+	cc /1 ] . ; /*all characters not sampled */
+
+	loop =iter 0 999
+		rseed * ;
+
+		set characters_n[1] getrandom[0 'characters_n[0]'];		/* randomly chosen characters to sample */
+		set characters_n[2] getrandom[0 'characters_n[0]'];		/* randomly chosen characters to sample twice */
+
+		set pickedran getrandom[0 2];				/* choose whether to ignore (0), sample once (1), sample twice (2) */
+		
+		if ('pickedran' == 2)
+			
+			xgr - . ;
+			xgr =0 *'characters_n[2]' ;
+			cc /2 [ {0} ;
+
+		else
+			if ('pickedran' == 1)
+
+				xgr - . ;
+				xgr =0 *'characters_n[1]' ;
+				cc /1 [ {0} ;
+
+				end
+		end
+		
+			set wcount 0 ;	
+			loop =xw 0 nchar
+				if(isact[#xw])
+					set wcount += weight[#xw] ;
+					end
+				stop
+			
+			if('wcount' == (nchar+1))
+				quote :done!;
+				
+				loop =xa 0 nchar
+						if(isact[#xa])
+						set xw weight[#xa] ;
+						quote :#xa - weight 'xw' ;
+						end
+						stop
+
+				endloop
+				end
+
+
+		stop
+
+stop
+
+sil - all;
+
+quote wcount es 'wcount' ;
+
+rep=; 
+macro - ;p/;
