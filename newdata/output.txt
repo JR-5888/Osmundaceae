@@ -1,0 +1,198 @@
+Implied Weighting is OFF 
+Any existing links are inactive 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+3     DRIFT     46           ------      3411         0:30:00    24,116,029,866 
+ 
+Search was interrupted... 
+Total rearrangements examined: 24,116,029,866. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 2 times.
+Best score: 3410.  10 trees retained. 
+Start swapping from 10 trees (score 3410)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR       99 of 100    ------      3410         0:00:09    58,599,796    
+Completed TBR branch-swapping.
+Total rearrangements examined: 58,599,796. 
+Constraints enforced during search. 
+Best score (TBR): 3410.  100 trees found (overflow). 
+Tree file: ew_nodep.tre 
+100 trees saved to ew_nodep.tre           
+Closing ew_nodep.tre (with 100 trees saved)
+Implied Weighting is OFF 
+Activating existing links 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+1     DRIFT      1           ------      3421         0:30:00    935,740,254   
+ 
+Search was interrupted... 
+Total rearrangements examined: 935,740,254. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 0 times.
+Best score: 3421.  1 trees retained. 
+Start swapping from 1 trees (score 3421)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR       99 of 100    ------      3421         0:01:05    48,037,508    
+Completed TBR branch-swapping.
+Total rearrangements examined: 48,037,508. 
+Constraints enforced during search. 
+Best score (TBR): 3421.  100 trees found (overflow). 
+Tree file: ew_dep.tre 
+100 trees saved to ew_dep.tre           
+Closing ew_dep.tre (with 100 trees saved)
+Implied Weighting is ON 
+Using extended implied weighting 
+Missing entries will be assumed to have 50.0% the homoplasy of 
+observed entries; homoplasy in missing entries not to be
+increased beyond 5.000 times observed homoplasy
+ 
+Set concavity for 23 character(s) to 5.000000 
+Not using extended implied weighting 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+1     DRIFT      1           ------      112.59796    0:30:00    204,934,570   
+ 
+Search was interrupted... 
+Total rearrangements examined: 204,934,570. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 0 times.
+Best score: 112.59796.  1 trees retained. 
+ 
+WARNING: 
+Some of the score calculations for implied weights
+are only approximate (calculation of minima for
+dependent characters with strong penalties is approximate!) 
+ 
+Start swapping from 1 trees (score 112.59796)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR        0 of 28     ------      112.59796    0:02:13    16,326,706    
+Completed TBR branch-swapping.
+Total rearrangements examined: 16,326,706. 
+Constraints enforced during search. 
+Best score (TBR): 112.59796.  28 trees found. 
+Tree file: xpi5_dep.tre 
+28 trees saved to xpi5_dep.tre           
+Closing xpi5_dep.tre (with 28 trees saved)
+Implied Weighting is ON 
+Using extended implied weighting 
+Missing entries will be assumed to have 50.0% the homoplasy of 
+observed entries; homoplasy in missing entries not to be
+increased beyond 5.000 times observed homoplasy
+ 
+Set concavity for 23 character(s) to 10.000000 
+Not using extended implied weighting 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+1     DRIFT      1           ------      65.64453     0:33:25    148,204,041   
+ 
+Search was interrupted... 
+Total rearrangements examined: 148,204,041. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 0 times.
+Best score: 65.64453.  1 trees retained. 
+ 
+WARNING: 
+Some of the score calculations for implied weights
+are only approximate (calculation of minima for
+dependent characters with strong penalties is approximate!) 
+ 
+Start swapping from 1 trees (score 65.64453)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR        0 of 1      ------      65.64453     0:00:02    554,755       
+Completed TBR branch-swapping.
+Total rearrangements examined: 554,755. 
+Constraints enforced during search. 
+Best score (TBR): 65.64453.  1 trees found. 
+Tree file: xpi10_dep.tre 
+1 trees saved to xpi10_dep.tre           
+Closing xpi10_dep.tre (with 1 trees saved)
+Implied Weighting is ON 
+Using extended implied weighting 
+Missing entries will be assumed to have 50.0% the homoplasy of 
+observed entries; homoplasy in missing entries not to be
+increased beyond 5.000 times observed homoplasy
+ 
+Set concavity for 23 character(s) to 15.000000 
+Not using extended implied weighting 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+1     DRIFT      1           ------      46.82052     0:30:00    205,749,687   
+ 
+Search was interrupted... 
+Total rearrangements examined: 205,749,687. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 0 times.
+Best score: 46.82052.  1 trees retained. 
+ 
+WARNING: 
+Some of the score calculations for implied weights
+are only approximate (calculation of minima for
+dependent characters with strong penalties is approximate!) 
+ 
+Start swapping from 1 trees (score 46.82052)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR       99 of 100    ------      46.79689     0:07:46    71,792,989    
+Completed TBR branch-swapping.
+Total rearrangements examined: 71,792,989. 
+Constraints enforced during search. 
+Best score (TBR): 46.79689.  100 trees found (overflow). 
+Tree file: xpi15_dep.tre 
+100 trees saved to xpi15_dep.tre           
+Closing xpi15_dep.tre (with 100 trees saved)
+Implied Weighting is ON 
+Using extended implied weighting 
+Missing entries will be assumed to have 50.0% the homoplasy of 
+observed entries; homoplasy in missing entries not to be
+increased beyond 5.000 times observed homoplasy
+ 
+Set concavity for 23 character(s) to 20.000000 
+Not using extended implied weighting 
+0 trees in memory 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+ 
+ 
+Interrupting search (time is out!)
+ 
+1     DRIFT      1           ------      36.53298     0:30:00    226,412,854   
+ 
+Search was interrupted... 
+Total rearrangements examined: 226,412,854. 
+Constraints enforced during search. 
+No target score defined.  Best score hit 0 times.
+Best score: 36.53298.  1 trees retained. 
+ 
+WARNING: 
+Some of the score calculations for implied weights
+are only approximate (calculation of minima for
+dependent characters with strong penalties is approximate!) 
+ 
+Start swapping from 1 trees (score 36.53298)... 
+Repl. Algor.     Tree        Score       Best Score   Time       Rearrangs.
+---   TBR       99 of 100    ------      36.53202     0:03:33    68,743,290    
+Completed TBR branch-swapping.
+Total rearrangements examined: 68,743,290. 
+Constraints enforced during search. 
+Best score (TBR): 36.53202.  100 trees found (overflow). 
+Tree file: xpi20_dep.tre 
+100 trees saved to xpi20_dep.tre           
+Closing xpi20_dep.tre (with 100 trees saved)
