@@ -1,0 +1,75 @@
+Dependencies
+
+Thamnopsteroideae 
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 162 : 
+     All trees: 
+       Sclerenchyma ring of petiole base (33): heterogeneous -> homogenous 
+ 
+Itposidemoideae 
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 172 : 
+     All trees: 
+       Cortex sclerenchymatous outer cortical layer (15): thinner than parenchymatous layer, or thicker than parenchymatous layer -> absent 
+       Tips of petiolar vascular bundle after departure from stem (26): straight or incurved -> recurved 
+       Sclerenchyma ring (32): present -> absent 
+       Stipular wings or spines (38): wings -> absent 
+ 
+Guaireoideae 
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 166 : 
+     All trees: 
+       Number of leaf-trace protoxylem strands upon departure from stele (19): one -> two 
+       Leaf-trace shape immediately after departure from stele (21): oblong or slightly concave -> strongly concave 
+ 
+Osmundoideae 
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 153 : 
+     All trees: 
+       Number of leaf-trace protoxylem strands in central part of cortex (22): more than two -> one 
+       Number of leaf-trace protoxylem strands upon departure from stem (24): more than two -> one 
+       origination of sclerenchyma associated with leaf trace (30): extending into stem -> developing in petiole 
+       Predominant orientation of roots in mantle cross section as a measure of growth habit (44): primarily vertical -> primarily radiating 
+ 
+Independencies
+
+Thamnopteroideae 
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 136 : 
+     All trees: 
+       sclerenchyma lining leaf-trace abaxially (27): absent --> continuous 
+       Sclerenchyma ring of petiole base (33): heterogeneous --> homogenous 
+ 
+Guaireoideae
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 145 : 
+     All trees: 
+       Stele internal invaginations into metaxylem cylinder (8): fewer than peripheral invaginations --> as many as or more than peripheral invaginations 
+       Scattered sclerenchyma in the inner cortex of the petiole (31): absent --> present 
+Osmundoideae
+ 
+Synapomorphies common to 100 trees 
+(Node numbers refer to nodes in consensus) 
+ 
+   Node 149 : 
+     All trees: 
+       Number of leaf-trace protoxylem strands in central part of cortex (22): more than two --> two 
+ 

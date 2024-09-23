@@ -1,72 +1,100 @@
 macro = ; 
+
+var : total_tax prop ;
+set total_tax ntax+1 ;
+set prop 'total_tax'/2 ;
+
+quote -------> '/.0prop' ;
+
 lquote = ;
 lquote[;
-sil = all;
+sil - all;
 
 xwip;
 tgr/;
 mxram 250;
-p bom2017.tnt; 
+p combined.tnt; 
+outgroup Gleichenella_pectinata ;
 collapse - ;
 hold 12500/12500;
 
 
 
 agr - . ;
+k0 ;
 
-	p new_nondep.tre; 
-		pcrprune /\ >0 ;  
-		tgr =0 (ew_nondep) . ;
+	p ew_nodep.tre;
+		if (ntrees)
+			pcrprune /\ >0 ;
+			end
+		tgr =0 (ew_nodep) . ;
 		tv > ;
 		k0 ;
 
 
-	p new_dep.tre; 
-		pcrprune /\ >1 ; 
+	p ew_dep.tre;
+		if (ntrees)
+			pcrprune /\ >1 ;
+			end
 		tgr =1 (ew_dep) . ;
 		tv > ;
 		k0 ;
 
-	p k5-dep.tre; 
-		pcrprune /\ >2 ; 
+	p xpi5_dep.tre; 
+		if (ntrees)
+			pcrprune /\ >2 ;
+			end
 		tgr =2 (k5_dep) . ;
 		tv > ;
 		k0 ;
 
-	p k10-dep.tre; 
-		pcrprune /\ >3 ; 
+	p xpi10_dep.tre; 
+		if (ntrees)
+			pcrprune /\ >3 ;
+			end
 		tgr =3 (k10_dep) . ;
 		tv > ;
 		k0 ;
 
 
-	p k15-dep.tre;
-		pcrprune /\ >4 ; 
+	p xpi15_dep.tre; 
+		if (ntrees)
+			pcrprune /\ >4 ;
+			end
 		tgr =4 (k15_dep) . ;
 		tv > ;
 		k0 ;
 
 
-	p k20-dep.tre; 
-		pcrprune /\ >5 ; 
+	p xpi20_dep.tre; 
+		if (ntrees)
+			pcrprune /\ >5 ;
+			end
 		tgr =5 (k20_dep) . ;
-		tv > ;
+		tv > . ;
 		k0 ;
 
-
+macro = ;
 
 /* topological congruence relative to a tree of reference */
 
+cls; clb; 
+
+
 var :
 reftree_gr
-prop_comnod[5]
+prop_comnod[6]
 small_size
-simil[5]
+simil[6]
 count
 ;
 
+
+
 	/*	simil first	*/
-tv < ;
+cls; clb; 
+tv < ; tgr ;
+
 set reftree_gr 0 ;
 
 
@@ -75,16 +103,18 @@ rep - ;
 loop =G 1 5
 	set count 0 ;
 	set simil[(#G-1)] 0 ;
-	loop =A 0 1999
-		progress #A 1999 Compare tree against tree in group #G .. ;
+	loop =A 0 ntrees
+		if (isintgroup[0 #A])
+		progress #A ntrees Compare tree against tree in group #G .. ;
 
-			loop =B 2000 ntrees
-				if(isintgroup[#G #B])
+			loop =B 0 ntrees
+				if (isintgroup[#G #B])
 					set simil[(#G-1)] += rrfdistp #A/#B/ ;
 					set count ++ ;
 					end
 				stop
 		progress = ;
+		end
 		stop
 		progress /;
 
@@ -96,37 +126,75 @@ rep=;
 
 
 	/*	proportion of shared nodes, between pruned consensus	*/
-loop =G 0 5
 
-	pruntax {#G}/{#G};
-	unique ;
-	ne * {#G}/ ; 
-	tv > / ;
-
+loop =G 0 5 /* the group 5 includes a single tree */
+	
+		if (!#G)
+			k0 ; tv < ; 
+			pruntax {#G}/{#G}; unique ; ne * {#G}/ ; tch / ; tgr =6 (ref) 0 ; tv > ;
+		else if (#G < 5 )
+			k0 ; tv < ; 
+			set reftree_gr #G+6 ; 
+			pruntax {#G}/{#G}; unique ; ne * {#G}/ ; tch / ; tgr >'reftree_gr' 0 ; tv > ;
+		else if (#G == 5)
+			k0 ; tv < ; ne * {#G}/ ; tch / ;  tgr >11 (k20singletree) 0 ; tv > ; 
+		end end end 
 	stop
 
-k0 ; 
-tv < ; 
-tgr =6 (pruned_consensus) siz<132 ;
-tch {6} ;
-loop =tr 1 ntrees
-	if (tsize[0] > tsize[#tr])
-		set small_size (tsize[1]) ;
-		else
-		set small_size (tsize[0]) ;
-		end
+k0; tv < ; tgr;
 
-	ne * 0 #tr ;
-	set count ntrees ;
-	set small_size (tsize['count']-2) ;
-	set prop_comnod[(#tr-1)] tnodes['count'] / 'small_size' ;
-	tch {6} ;
+
+
+
+k0 ; tv < ; tch {6} {7} {8} {9} {10} {11};
+if (isintgroup[6 0]) set reftree_gr 0 ; end
+
+loop =groupt 7 11
+	
+	loop =tr 0 ntrees
+	if (isintgroup[#groupt #tr])
+	
+		if (tsize['reftree_gr'] > tsize[#tr])
+			set small_size (tsize[1]) ;
+			else
+			set small_size (tsize['reftree_gr']) ;
+			end
+	
+		ne * 0 #tr ;
+		set count ntrees ;
+		set small_size (tsize['count']-2) ;
+		set prop_comnod[(#tr-1)] tnodes['count'] / 'small_size' ;
+
+		end
+		stop
+
+
+	
 	stop
 
 quote :Comparison, RF, Prop. common nodes&10;
 loop 1 5
 	quote :G0 vs G#1, 'simil[(#1-1)]', 'prop_comnod[(#1-1)]'&10;
 	stop
+
+log/;
+
+
+
+
+
+k0 ;
+tv < ;
+tv - ;
+
+loop =gt 6 11 
+loop =tt 0 ntrees
+	if (isintgroup[#gt #tt]) tgr >12 #tt ; end
+	stop stop
+	
+/* tch {0} {1} {2} {3} {4} {5} ; tgr - 6.12 ; */
+
+tch {6} {7} {8} {9} {10} {11} ; tgr - 6.12 ;
 
 taxonomy + ;
 set count ntrees;
@@ -146,44 +214,41 @@ quote :GROUP; loop 0 ('count') quote :, ; quote :T#1; stop quote :&10;
 quote :Osmundaceae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 133 #1] ;
+	set simil simgroup['count' 136 #1] ;
 	quote :'/.0simil';
 	stop
 quote :&10Osmundoideae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 141 #1] ;
+	set simil simgroup['count' 144 #1] ;
 	quote :'/.0simil';
 	stop
 quote :&10Thamnospteroideae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 135 #1] ;
+	set simil simgroup['count' 138 #1] ;
 	quote :'/.0simil';
 	stop
 quote :&10Guaireaceae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 139 #1] ;
+	set simil simgroup['count' 142 #1] ;
 	quote :'/.0simil';
 	stop
 quote :&10Itopsidemoideae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 143 #1] ;
+	set simil simgroup['count' 146 #1] ;
 	quote :'/.0simil';
 	stop
 quote :&10Guaireoideae;
 loop 0 ('count')
 	quote :, ;
-	set simil simgroup['count' 138 #1] ;
+	set simil simgroup['count' 141 #1] ;
 	quote :'/.0simil';
 	stop
 
 	quote :&10&10 ;
-	
-	
-	
 
 var :
 title_x
@@ -204,11 +269,12 @@ set title_x 33; set title_y 13;
 set posx[0] 20; set posx[1] 61; set posx[2] 101;
 set posy[0] 25; set posy[1] 66;
 
-sil = all ;
+
+
 
 log simgroup.svg;
 quote :&10&10;
-quote :<svg width=&34 900&34&32	height=&34 900&34&32	xmlns=&34http://www.w3.org/2000/svg&34> &10;
+quote :<svg width=&34 900&34&32	height=&34 900&34&32		xmlns=&34http://www.w3.org/2000/svg&34> &10;
 
 loop =txgr 6 11
 
@@ -247,17 +313,17 @@ loop =txgr 6 11
 			end
 
 		if(#txgr == 6)
-			set simil simgroup['count' 133 #tre] ;
+			set simil simgroup['count' 136 #tre] ;
 		else if(#txgr == 7)
-			set simil simgroup['count' 141 #tre] ;
+			set simil simgroup['count' 144 #tre] ;
 		else if(#txgr == 8)
-			set simil simgroup['count' 135 #tre] ;
-		else if(#txgr == 9)
-			set simil simgroup['count' 139 #tre] ;
-		else if(#txgr == 10)
 			set simil simgroup['count' 138 #tre] ;
+		else if(#txgr == 9)
+			set simil simgroup['count' 142 #tre] ;
+		else if(#txgr == 10)
+			set simil simgroup['count' 141 #tre] ;
 		else if(#txgr == 11)
-			set simil simgroup['count' 143 #tre] ;
+			set simil simgroup['count' 146 #tre] ;
 		end end end end end end
 
 				set small_size regalfa;
@@ -326,7 +392,6 @@ loop 0 'count'
 
 log /;
 tgr/;
-
 lquote - ;
 lquote ] ;
 macro - ;

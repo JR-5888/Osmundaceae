@@ -13,7 +13,7 @@ xread
 &[num]
 Anomorrhoea_fischeri____@Osmundales_Osmundaceae_Anomorrhoea_                           										?????????????????0?0??1121000???10????100????
 Bathypteris_rhomboidea____@Osmundales_Osmundaceae_Bathypteris_                         										2?0?1?0000??200[12]00?020?1?10220?010????2???0?0
-Chasmatopteris_principalis____@Osmundales_Osmundaceae_Thamnospteroideae_                     									????102010??1001000010212101211010????110?0?0
+Chasmatopteris_principalis____@Osmundales_Osmundaceae_Thamnopteroideae_                     									????102010??1001000010212101211010????110?0?0
 Grammatopteris_baldaufii____@Filicales?																						2[01]1?0?1??0??21110[01]2[01]20111000??1110????0???200
 Grammatopteris_rigollotii____@Filicales?																					2?0?0?0??0??2111012120111000??1110????0???000
 Grammatopteris_freitasii____@Filicales?																						200?0?0??0??2111012120111000??1110????0???[01]00
@@ -24,15 +24,15 @@ Palaeosmunda_playfordii____@Osmundales_Osmundaceae_Osmundoideae_Palaeosmunda_   
 Palaeosmunda_williamsii____@Osmundales_Osmundaceae_Osmundoideae_Palaeosmunda_                        						0?201021100020[01]2001[01]20[12]12100111111????100?110
 Rastropteris_pinquanensis____@Filicales?																					200?0?0?????2111000020111000??1110????0???100
 Shuichengella_primitiva____@Osmundales_Osmundaceae_Shuichengella_                        									10211020?0002011001221212?????????????????20?
-Thamnopteris_diploxylon____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                        					21??100000??[12]00??00010[12]1?1????????????????1??
-Thamnopteris_gracilis____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                          					20??100000??[12]00??00010[12]121????????????????1??
-Thamnopteris_gwynnevaughanii____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                   					210?100000??200200001?[12]12??2201010????100?[12]?0
-Thamnopteris_javorskii____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                         					210?101000??2002000010[12][01]2100110110????100?[01]??
-Thamnopteris_kazanensis____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                       					?????0???????00????01?[12]1?10[12]201010????100???0
-Thamnopteris_kidstonii____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                         					2110100000??[12]00[12]00001?212102201010????1010[01][01]0
-Thamnopteris_schlechtendalii____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                   					210?101000??2002000[01]1?212102201010????1020[12]?0
-Thamnopteris_splendida____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                         					2?0?101000??20020000102121000??010????11?0??0
-Thamnopteris_uralica____@Osmundales_Osmundaceae_Thamnospteroideae_Thamnospteris_                           					2???100000??200[12]000010[12]1?1????????????????1??
+Thamnopteris_diploxylon____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                        					21??100000??[12]00??00010[12]1?1????????????????1??
+Thamnopteris_gracilis____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                          					20??100000??[12]00??00010[12]121????????????????1??
+Thamnopteris_gwynnevaughanii____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                   					210?100000??200200001?[12]12??2201010????100?[12]?0
+Thamnopteris_javorskii____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                         					210?101000??2002000010[12][01]2100110110????100?[01]??
+Thamnopteris_kazanensis____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                       					?????0???????00????01?[12]1?10[12]201010????100???0
+Thamnopteris_kidstonii____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                         					2110100000??[12]00[12]00001?212102201010????1010[01][01]0
+Thamnopteris_schlechtendalii____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                   					210?101000??2002000[01]1?212102201010????1020[12]?0
+Thamnopteris_splendida____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                         					2?0?101000??20020000102121000??010????11?0??0
+Thamnopteris_uralica____@Osmundales_Osmundaceae_Thamnopteroideae_Thamnopteris_                           					2???100000??200[12]000010[12]1?1????????????????1??
 Tiania_yunnanensis____@Osmundales_Guaireaceae_Itopsidemoideae_Tiania_            		                 					0?20101001??2010?01[01]212121????????????????101
 Zhongmingella_plenasioides____@Osmundales_Guaireaceae_Guaireoideae_Zhongmingella_                     						0?2110212001[12]11????121212?????????????????[02]??
 Claytosmunda_beardmorensis____@Osmundales_Osmundaceae_Osmundoideae_Osmundeae_Osmundinae_Claytosmunda_     						1?211021[01]00010020010[12]00[01]01000??01101001???1?1
@@ -308,7 +308,7 @@ taxono + ;
 agroup - . ;
 
 	/* I know beforehand that node 137 in the taxonomic tree includes Osmundales */	
-force + [@0 137 @0 139] ;
+force + [@0 137] [@0 139] ;
 const = ; 
 force ;
 
@@ -319,6 +319,7 @@ cc [ . ;
 taxc + . ; 
 xlinks [ ; 
 
+p/;
 
 timeout 00:30:00 ;
 
@@ -332,6 +333,8 @@ pi-;
 xlinks [ ;
 k0; xm; bb;
 tsa * ew_dep.tre ; sa; tsa/;
+
+timeout 00:15:00 ;
 
 pi=5;
 xpi=;
@@ -367,9 +370,5 @@ tsa * xpi20_dep.tre ; sa; tsa/;
 
 log/;
 
-silent = all ; 
-pcrprune :100  /\ >1 ; 
-silent - all ; 
 
-ne{1} ;
 p/;

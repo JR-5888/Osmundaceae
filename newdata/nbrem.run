@@ -1,0 +1,73 @@
+lquote[;
+macro = ; 
+
+var : total_tax prop ;
+set total_tax ntax+1 ;
+set prop 'total_tax'/2 ;
+
+const = ;
+
+pi - ; 
+
+
+colla - ; 
+cc[ . ;
+taxc + . ;
+k0 ; 
+
+xli [ ; /* Doing bremer with dependencies */
+p ew_dep.tre ; 
+agr - . ; 
+pcrprune & :10 ='/.0prop' /\ >0 ; 
+
+
+subo 0x0 ; 
+loop 1 12
+	hold +100 ;
+	subo #1 x 0 ;
+	bb = fillonly ;
+	stop
+	
+	ttag = ;
+	bsupp /{0}; 
+	ttag & f1b_half.svg fontsize 20 ; 
+	ttag - ;
+subo 0x0;
+
+agr ;
+
+
+k0 ; 
+
+quote &10&10&10;
+quote ------------ &10 ;
+quote ------------ &10 ;
+quote ------------ &10 ;
+quote &10&10&10 ;
+
+
+xli ] ;  /* Doing bremer without dependencies */
+p ew_nodep.tre ; 
+agr - . ; 
+pcrprune & :10 ='/.0prop' /\ >0 ; 
+
+
+subo 0x0 ; 
+loop 1 12
+	hold +100 ;
+	subo #1 x 0 ;
+	bb = fillonly ;
+	stop
+	
+	ttag = ;
+	bsupp /{0}; 
+	ttag & f1a_half.svg fontsize 20 ; 
+	ttag - ;
+subo 0x0;
+
+agr ; 
+
+
+macro - ;
+p/;
+tsave * reduced_ew_dep.tre ; sa ; tsa/; 

@@ -1,0 +1,47 @@
+macro = ; 
+	/*	Just to get all the reduced consensus trees */
+
+
+colla none ; 
+colla - ; 
+tgr - . ;
+tgr / ; 
+agr - . ;
+hold 1000/1000; 
+
+k0 ;
+
+p ew_nodep.tre ; 
+pcrprune . /\ >0 ;
+pruntax ./{0} ;
+ne * ;
+tch / ; tgroup =0 (ew_nodep_red) 0 ; tv > ;
+
+k0 ;
+
+p ew_dep.tre ; 
+pcrprune . /\ >1 ;
+pruntax ./{1} ;
+ne * ;
+tch / ; tgroup =1 (ew_dep_red) 0 ; tv > ;
+
+loop 5+5 15
+	k0 ;
+	
+	p xpi#1_dep.tre ;
+	pcrprune ./\ >#1 ;
+	pruntax ./{#1} ;
+	ne * ;
+	tch / ; tgroup =#1 0 ; tv > ; 
+	
+	stop
+
+k0 ; 
+
+p xpi20_dep.tre;
+tgroup =20 0 ;
+tv > / ; 
+	
+macro - ;
+tgr / ;
+p/;
