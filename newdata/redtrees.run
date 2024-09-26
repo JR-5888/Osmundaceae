@@ -41,7 +41,10 @@ k0 ;
 p xpi20_dep.tre;
 tgroup =20 0 ;
 tv > / ; 
-	
+
+k0 ; 
+tv < ; 
+tgr; 
 macro - ;
 tgr / ;
 p/;
