@@ -332,7 +332,7 @@ agr - . ; pcrprune /\ >0 ; pruntax ./{0};
 tgroup =0 (ew_nodep) *100 ; tch {0} ; tv > ; 
 
 
-timeout 00:01:00 ;
+timeout 00:45:00 ;
 
 pi=5;
 xpi=;
