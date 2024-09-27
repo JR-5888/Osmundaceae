@@ -1,0 +1,39 @@
+xwip; 
+mxram 500 ;
+p combined.tnt; 
+k0; tgroup - . ; agroup - . ; 
+hold 200/200;
+
+p ew_nodep.tre ; tgroup =0 (ew_nodep) *1 ; tch {0} ; tv > ;
+k0; 
+p ew_dep.tre ; tgroup =1 (ew_dep) *1 ; tch {1} ; tv > ;
+k0 ; 
+tv <;
+
+pi - ;
+cls; clb; 
+xli [ ;
+
+lquote [;
+macro = ; 
+cc ] . [ 32.37 ;
+cc ] . [ .44 ;
+var : largo largo_total[2] arbol[2] diff diffcom ;
+
+loop =a 0 ntrees
+	set largo_total[#a] 0;
+	loop =b 32 37
+		set largo score[#a #b];
+		set largo_total[#a] += 'largo' ;
+		quote In tree #a ($tgroup #a), score of &39 $character #b&39: 'largo' ;
+		stop
+		set arbol[#a] score[#a] ;
+		quote Total length for complex in $tgroup #a is: 'largo_total[#a]' (tree is 'arbol[#a]');
+	stop
+	
+	set diff 'arbol[0]' - 'arbol[1]' ;
+	set diffcom 'largo_total[0]' - 'largo_total[1]' ;
+		quote &10Difference between topologies is 'diff' (between chars. in complex 5: 'diffcom') ;
+	
+macro - ; 
+p/;

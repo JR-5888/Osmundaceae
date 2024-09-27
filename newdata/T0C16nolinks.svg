@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<svg width="1011" height="865" xmlns="http://www.w3.org/2000/svg">
+<g stroke-width="2" stroke="black" font-family="Verdana" font-size="12">
+<text x="10" y="850" stroke-width="1"> L = 355 (L = 329)</text>
+<line x1="74" y1="75" x2="54" y2="75" />
+<line x1="234" y1="505" x2="214" y2="505" />
+<line x1="254" y1="415" x2="234" y2="415" />
+<line x1="234" y1="400" x2="214" y2="400" />
+<line x1="94" y1="115" x2="74" y2="115" />
+<line x1="234" y1="275" x2="214" y2="275" />
+<line x1="134" y1="184" x2="114" y2="184" />
+<line x1="154" y1="204" x2="134" y2="204" />
+<line x1="174" y1="223" x2="154" y2="223" />
+<line x1="194" y1="242" x2="174" y2="242" />
+<line x1="214" y1="260" x2="194" y2="260" />
+<line x1="174" y1="344" x2="154" y2="344" />
+<line x1="194" y1="363" x2="174" y2="363" />
+<line x1="214" y1="382" x2="194" y2="382" />
+<line x1="154" y1="403" x2="134" y2="403" />
+<line x1="174" y1="462" x2="154" y2="462" />
+<line x1="194" y1="480" x2="174" y2="480" />
+<line x1="214" y1="495" x2="194" y2="495" />
+<line x1="54" y1="45" x2="34" y2="45" />
+<line x1="114" y1="164" x2="94" y2="164" />
+<line x1="34" y1="89" x2="14" y2="89" />
+<line x1="54" y1="134" x2="34" y2="134" />
+<line x1="74" y1="194" x2="54" y2="194" />
+<line x1="94" y1="274" x2="74" y2="274" />
+<line x1="114" y1="384" x2="94" y2="384" />
+<line x1="134" y1="464" x2="114" y2="464" />
+<line x1="154" y1="525" x2="134" y2="525" />
+<line x1="14" y1="57" x2="5" y2="57" />
+<line x1="96" y1="65" x2="74" y2="65" />
+<line x1="36" y1="25" x2="14" y2="25" />
+<line x1="96" y1="85" x2="74" y2="85" />
+<line x1="196" y1="325" x2="174" y2="325" />
+<line x1="276" y1="405" x2="254" y2="405" />
+<line x1="276" y1="425" x2="254" y2="425" />
+<line x1="216" y1="345" x2="194" y2="345" />
+<line x1="256" y1="385" x2="234" y2="385" />
+<line x1="254" y1="265" x2="234" y2="265" />
+<line x1="114" y1="105" x2="94" y2="105" />
+<line x1="174" y1="185" x2="154" y2="185" />
+<line x1="194" y1="205" x2="174" y2="205" />
+<line x1="156" y1="165" x2="134" y2="165" />
+<line x1="114" y1="125" x2="94" y2="125" />
+<line x1="214" y1="225" x2="194" y2="225" />
+<line x1="256" y1="285" x2="234" y2="285" />
+<line x1="236" y1="245" x2="214" y2="245" />
+<line x1="234" y1="365" x2="214" y2="365" />
+<line x1="196" y1="445" x2="174" y2="445" />
+<line x1="216" y1="465" x2="194" y2="465" />
+<line x1="236" y1="485" x2="214" y2="485" />
+<line x1="134" y1="305" x2="114" y2="305" />
+<line x1="134" y1="145" x2="114" y2="145" />
+<line x1="75" y1="65" x2="75" y2="85" />
+<line x1="255" y1="405" x2="255" y2="425" />
+<line x1="235" y1="385" x2="235" y2="415" />
+<line x1="95" y1="105" x2="95" y2="125" />
+<line x1="235" y1="265" x2="235" y2="285" />
+<line x1="135" y1="165" x2="135" y2="204" />
+<line x1="155" y1="185" x2="155" y2="223" />
+<line x1="175" y1="205" x2="175" y2="242" />
+<line x1="195" y1="225" x2="195" y2="260" />
+<line x1="215" y1="245" x2="215" y2="275" />
+<line x1="175" y1="325" x2="175" y2="363" />
+<line x1="195" y1="345" x2="195" y2="382" />
+<line x1="215" y1="365" x2="215" y2="400" />
+<line x1="155" y1="344" x2="155" y2="462" />
+<line x1="175" y1="445" x2="175" y2="480" />
+<line x1="195" y1="465" x2="195" y2="495" />
+<line x1="215" y1="485" x2="215" y2="505" />
+<line x1="115" y1="145" x2="115" y2="184" />
+<line x1="35" y1="45" x2="35" y2="134" />
+<line x1="55" y1="75" x2="55" y2="194" />
+<line x1="75" y1="115" x2="75" y2="274" />
+<line x1="95" y1="164" x2="95" y2="384" />
+<line x1="115" y1="305" x2="115" y2="464" />
+<line x1="135" y1="403" x2="135" y2="525" />
+<line x1="15" y1="25" x2="15" y2="89" />
+<defs>
+    <filter x="0" y="0.0" width="1" height="1.0" id="solid">
+      <feFlood flood-color="white"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+<text x="102" y="67" stroke-width="1">Dipteris_conjugata</text>
+<text x="42" y="27" stroke-width="1">Gleichenella_pectinata</text>
+<text x="102" y="87" stroke-width="1">Matonia_pectinata</text>
+<text x="202" y="327" stroke-width="1">Lunea_jonesii</text>
+<text x="282" y="407" stroke-width="1">Itopsidema_vancleavei</text>
+<text x="282" y="427" stroke-width="1">Donwelliacaulis_chlouberii</text>
+<text x="222" y="347" stroke-width="1">Zhongmingella_plenasioides</text>
+<text x="262" y="387" stroke-width="1">Tiania_yunnanensis</text>
+<text x="260" y="267" stroke-width="1">Thamnopteris_uralica</text>
+<text x="120" y="107" stroke-width="1">Thamnopteris_splendida</text>
+<text x="180" y="187" stroke-width="1">Thamnopteris_schlechtendalii</text>
+<text x="200" y="207" stroke-width="1">Thamnopteris_kidstonii</text>
+<text x="162" y="167" stroke-width="1">Thamnopteris_kazanensis</text>
+<text x="120" y="127" stroke-width="1">Thamnopteris_javorskii</text>
+<text x="220" y="227" stroke-width="1">Thamnopteris_gwynnevaughanii</text>
+<text x="262" y="287" stroke-width="1">Thamnopteris_gracilis</text>
+<text x="242" y="247" stroke-width="1">Thamnopteris_diploxylon</text>
+<text x="240" y="367" stroke-width="1">Shuichengella_primitiva</text>
+<text x="202" y="447" stroke-width="1">Guairea_millerii</text>
+<text x="222" y="467" stroke-width="1">Guairea_carnierii</text>
+<text x="242" y="487" stroke-width="1">Guairea_brasiliensis</text>
+<text x="140" y="307" stroke-width="1">Chasmatopteris_principalis</text>
+<text x="140" y="147" stroke-width="1">Bathypteris_rhomboidea</text>
+<text x="238" y="507" stroke-width="1">[Osmundacaulis]</text>
+<text x="58" y="47" stroke-width="1">[outgroup]</text>
+<text x="158" y="527" stroke-width="1">[Remaining_Osmundales]</text>
+</g>
+<g stroke-width="2" stroke="black" font-family="Verdana" font-style="regular" font-size="12">
+<text filter="url(#solid)" x="60" y="76" stroke-width="1">0</text>
+<text filter="url(#solid)" x="220" y="506" stroke-width="1">0</text>
+<text filter="url(#solid)" x="240" y="416" stroke-width="1">0</text>
+<text filter="url(#solid)" x="220" y="401" stroke-width="1">0</text>
+<text filter="url(#solid)" x="80" y="116" stroke-width="1">0</text>
+<text filter="url(#solid)" x="220" y="276" stroke-width="1">0</text>
+<text filter="url(#solid)" x="120" y="185" stroke-width="1">0</text>
+<text filter="url(#solid)" x="140" y="205" stroke-width="1">0</text>
+<text filter="url(#solid)" x="160" y="224" stroke-width="1">0</text>
+<text filter="url(#solid)" x="180" y="243" stroke-width="1">0</text>
+<text filter="url(#solid)" x="200" y="261" stroke-width="1">0</text>
+<text filter="url(#solid)" x="160" y="345" stroke-width="1">0</text>
+<text filter="url(#solid)" x="180" y="364" stroke-width="1">0</text>
+<text filter="url(#solid)" x="200" y="383" stroke-width="1">0</text>
+<text filter="url(#solid)" x="140" y="404" stroke-width="1">0</text>
+<text filter="url(#solid)" x="160" y="463" stroke-width="1">0</text>
+<text filter="url(#solid)" x="180" y="481" stroke-width="1">0</text>
+<text filter="url(#solid)" x="200" y="496" stroke-width="1">0</text>
+<text filter="url(#solid)" x="40" y="46" stroke-width="1">0</text>
+<text filter="url(#solid)" x="100" y="165" stroke-width="1">0</text>
+<text filter="url(#solid)" x="20" y="90" stroke-width="1">0</text>
+<text filter="url(#solid)" x="40" y="135" stroke-width="1">0</text>
+<text filter="url(#solid)" x="60" y="195" stroke-width="1">0</text>
+<text filter="url(#solid)" x="80" y="275" stroke-width="1">0</text>
+<text filter="url(#solid)" x="100" y="385" stroke-width="1">0</text>
+<text filter="url(#solid)" x="120" y="465" stroke-width="1">0</text>
+<text filter="url(#solid)" x="140" y="526" stroke-width="1">0</text>
+<text filter="url(#solid)" x="6" y="58" stroke-width="1">0</text>
+<text filter="url(#solid)" x="80" y="66" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="20" y="26" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="80" y="86" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="180" y="326" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="260" y="406" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="260" y="426" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="200" y="346" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="240" y="386" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="240" y="266" stroke-width="1">0</text>
+<text filter="url(#solid)" x="100" y="106" stroke-width="1">0</text>
+<text filter="url(#solid)" x="160" y="186" stroke-width="1">0</text>
+<text filter="url(#solid)" x="180" y="206" stroke-width="1">0</text>
+<text filter="url(#solid)" x="140" y="166" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="100" y="126" stroke-width="1">0</text>
+<text filter="url(#solid)" x="200" y="226" stroke-width="1">0</text>
+<text filter="url(#solid)" x="240" y="286" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="220" y="246" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="220" y="366" stroke-width="1">0</text>
+<text filter="url(#solid)" x="180" y="446" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="200" y="466" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="220" y="486" stroke-width="1">?=0</text>
+<text filter="url(#solid)" x="120" y="306" stroke-width="1">0</text>
+<text filter="url(#solid)" x="120" y="146" stroke-width="1">0</text>
+</g>
+</svg>

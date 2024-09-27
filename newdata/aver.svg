@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<svg width="1379" height="632" xmlns="http://www.w3.org/2000/svg">
+<g stroke-width="2" stroke="black" font-family="Verdana" font-size="12">
+<line x1="185" y1="95" x2="149" y2="95" />
+<line x1="209" y1="162" x2="189" y2="162" />
+<line x1="229" y1="180" x2="209" y2="180" />
+<line x1="249" y1="195" x2="229" y2="195" />
+<line x1="229" y1="255" x2="209" y2="255" />
+<line x1="209" y1="240" x2="189" y2="240" />
+<line x1="149" y1="65" x2="113" y2="65" />
+<line x1="189" y1="143" x2="169" y2="143" />
+<line x1="77" y1="76" x2="41" y2="76" />
+<line x1="113" y1="107" x2="77" y2="107" />
+<line x1="149" y1="150" x2="113" y2="150" />
+<line x1="169" y1="205" x2="149" y2="205" />
+<line x1="189" y1="267" x2="169" y2="267" />
+<line x1="209" y1="295" x2="189" y2="295" />
+<line x1="245" y1="305" x2="209" y2="305" />
+<line x1="41" y1="50" x2="5" y2="50" />
+<line x1="97" y1="45" x2="77" y2="45" />
+<line x1="61" y1="25" x2="41" y2="25" />
+<line x1="249" y1="245" x2="229" y2="245" />
+<line x1="205" y1="85" x2="185" y2="85" />
+<line x1="249" y1="165" x2="229" y2="165" />
+<line x1="269" y1="185" x2="249" y2="185" />
+<line x1="229" y1="145" x2="209" y2="145" />
+<line x1="205" y1="105" x2="185" y2="105" />
+<line x1="269" y1="205" x2="249" y2="205" />
+<line x1="249" y1="265" x2="229" y2="265" />
+<line x1="229" y1="225" x2="209" y2="225" />
+<line x1="229" y1="285" x2="209" y2="285" />
+<line x1="209" y1="125" x2="189" y2="125" />
+<line x1="186" y1="85" x2="186" y2="105" />
+<line x1="210" y1="145" x2="210" y2="180" />
+<line x1="230" y1="165" x2="230" y2="195" />
+<line x1="250" y1="185" x2="250" y2="205" />
+<line x1="230" y1="245" x2="230" y2="265" />
+<line x1="210" y1="225" x2="210" y2="255" />
+<line x1="190" y1="125" x2="190" y2="162" />
+<line x1="78" y1="45" x2="78" y2="107" />
+<line x1="114" y1="65" x2="114" y2="150" />
+<line x1="150" y1="95" x2="150" y2="205" />
+<line x1="170" y1="143" x2="170" y2="267" />
+<line x1="190" y1="240" x2="190" y2="295" />
+<line x1="210" y1="285" x2="210" y2="305" />
+<line x1="42" y1="25" x2="42" y2="76" />
+<defs>
+    <filter x="0" y="0.0" width="1" height="1.0" id="solid">
+      <feFlood flood-color="white"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+<text x="103" y="47" stroke-width="1">Diplopterygium_bancroftii</text>
+<text x="67" y="27" stroke-width="1">Gleichenella_pectinata</text>
+<text x="255" y="247" stroke-width="1">Thamnopteris_uralica</text>
+<text x="211" y="87" stroke-width="1">Thamnopteris_splendida</text>
+<text x="255" y="167" stroke-width="1">Thamnopteris_schlechtendalii</text>
+<text x="275" y="187" stroke-width="1">Thamnopteris_kidstonii</text>
+<text x="235" y="147" stroke-width="1">Thamnopteris_kazanensis</text>
+<text x="211" y="107" stroke-width="1">Thamnopteris_javorskii</text>
+<text x="275" y="207" stroke-width="1">Thamnopteris_gwynnevaughanii</text>
+<text x="255" y="267" stroke-width="1">Thamnopteris_gracilis</text>
+<text x="235" y="227" stroke-width="1">Thamnopteris_diploxylon</text>
+<text x="235" y="287" stroke-width="1">Chasmatopteris_principalis</text>
+<text x="215" y="127" stroke-width="1">Bathypteris_rhomboidea</text>
+<text x="153" y="67" stroke-width="1">[Non-Osmundales]</text>
+<text x="249" y="307" stroke-width="1">[Other_Osmundales]</text>
+</g>
+<g stroke-width="2" stroke="black" font-family="Verdana" font-style="regular" font-size="12">
+<text filter="url(#solid)" x="155" y="96" stroke-width="1">4,5</text>
+<text filter="url(#solid)" x="195" y="163" stroke-width="1">5</text>
+<text filter="url(#solid)" x="215" y="181" stroke-width="1">5</text>
+<text filter="url(#solid)" x="235" y="196" stroke-width="1">5</text>
+<text filter="url(#solid)" x="215" y="256" stroke-width="1">5</text>
+<text filter="url(#solid)" x="195" y="241" stroke-width="1">5</text>
+<text filter="url(#solid)" x="119" y="66" stroke-width="1">4,5</text>
+<text filter="url(#solid)" x="175" y="144" stroke-width="1">5</text>
+<text filter="url(#solid)" x="47" y="77" stroke-width="1">4,5</text>
+<text filter="url(#solid)" x="83" y="108" stroke-width="1">4,5</text>
+<text filter="url(#solid)" x="119" y="151" stroke-width="1">4,5</text>
+<text filter="url(#solid)" x="155" y="206" stroke-width="1">5</text>
+<text filter="url(#solid)" x="175" y="268" stroke-width="1">5</text>
+<text filter="url(#solid)" x="195" y="296" stroke-width="1">5</text>
+<text filter="url(#solid)" x="215" y="306" stroke-width="1">0,5</text>
+<text filter="url(#solid)" x="1" y="51" stroke-width="1">4,5</text>
+</g>
+</svg>
