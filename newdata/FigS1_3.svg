@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<svg width="345" height="1184" xmlns="http://www.w3.org/2000/svg">
+<g stroke-width="2" stroke="black" font-family="Verdana" font-size="5">
+<text x="10" y="1169" stroke-width="1"> xpi10_dep_reduced_consensus</text>
+<line x1="37" y1="52" x2="37" y2="59"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="37" y1="52" x2="37" y2="46"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="149" y1="668" x2="149" y2="674"  stroke="red"/>
+<line x1="149" y1="663" x2="149" y2="668"  stroke="red"/>
+<line x1="141" y1="844" x2="141" y2="850"  stroke="red"/>
+<line x1="141" y1="839" x2="141" y2="844"  stroke="red"/>
+<line x1="85" y1="525" x2="85" y2="531"  stroke="red"/>
+<line x1="85" y1="520" x2="85" y2="525"  stroke="red"/>
+<line x1="117" y1="811" x2="117" y2="817"  stroke="red"/>
+<line x1="117" y1="806" x2="117" y2="811"  stroke="red"/>
+<line x1="101" y1="778" x2="101" y2="784"  stroke="red"/>
+<line x1="101" y1="773" x2="101" y2="778"  stroke="red"/>
+<line x1="181" y1="976" x2="181" y2="982"  stroke="red"/>
+<line x1="181" y1="971" x2="181" y2="976"  stroke="red"/>
+<line x1="141" y1="926" x2="141" y2="937"  stroke="red"/>
+<line x1="141" y1="916" x2="141" y2="926"  stroke="red"/>
+<line x1="149" y1="937" x2="149" y2="948"  stroke="red"/>
+<line x1="149" y1="927" x2="149" y2="937"  stroke="red"/>
+<line x1="157" y1="948" x2="157" y2="958"  stroke="red"/>
+<line x1="157" y1="938" x2="157" y2="948"  stroke="red"/>
+<line x1="165" y1="958" x2="165" y2="968"  stroke="red"/>
+<line x1="165" y1="949" x2="165" y2="958"  stroke="red"/>
+<line x1="173" y1="968" x2="173" y2="976"  stroke="red"/>
+<line x1="173" y1="960" x2="173" y2="968"  stroke="red"/>
+<line x1="141" y1="660" x2="141" y2="668"  stroke="red"/>
+<line x1="141" y1="652" x2="141" y2="660"  stroke="red"/>
+<line x1="109" y1="363" x2="109" y2="372"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="363" x2="109" y2="354"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="371" x2="117" y2="378"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="371" x2="117" y2="365"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="77" y1="537" x2="77" y2="550"  stroke="red"/>
+<line x1="77" y1="525" x2="77" y2="537"  stroke="red"/>
+<line x1="85" y1="550" x2="85" y2="558"  stroke="red"/>
+<line x1="85" y1="542" x2="85" y2="550"  stroke="red"/>
+<line x1="93" y1="558" x2="93" y2="564"  stroke="red"/>
+<line x1="93" y1="553" x2="93" y2="558"  stroke="red"/>
+<line x1="157" y1="1020" x2="157" y2="1026"  stroke="red"/>
+<line x1="157" y1="1015" x2="157" y2="1020"  stroke="red"/>
+<line x1="165" y1="1053" x2="165" y2="1059"  stroke="red"/>
+<line x1="165" y1="1048" x2="165" y2="1053"  stroke="red"/>
+<line x1="125" y1="936" x2="125" y2="967"  stroke="red"/>
+<line x1="125" y1="905" x2="125" y2="936"  stroke="red"/>
+<line x1="133" y1="967" x2="133" y2="1008"  stroke="red"/>
+<line x1="133" y1="926" x2="133" y2="967"  stroke="red"/>
+<line x1="141" y1="1008" x2="141" y2="1024"  stroke="red"/>
+<line x1="141" y1="993" x2="141" y2="1008"  stroke="red"/>
+<line x1="149" y1="1004" x2="149" y2="1045"  stroke="red"/>
+<line x1="157" y1="1045" x2="157" y2="1053"  stroke="red"/>
+<line x1="157" y1="1037" x2="157" y2="1045"  stroke="red"/>
+<line x1="133" y1="678" x2="133" y2="697"  stroke="red"/>
+<line x1="133" y1="660" x2="133" y2="678"  stroke="red"/>
+<line x1="141" y1="697" x2="141" y2="709"  stroke="red"/>
+<line x1="141" y1="685" x2="141" y2="697"  stroke="red"/>
+<line x1="149" y1="696" x2="149" y2="723"  stroke="red"/>
+<line x1="157" y1="723" x2="157" y2="729"  stroke="red"/>
+<line x1="157" y1="718" x2="157" y2="723"  stroke="red"/>
+<line x1="125" y1="426" x2="125" y2="433"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="426" x2="125" y2="420"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="448" x2="125" y2="455"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="448" x2="125" y2="442"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="327" x2="109" y2="334"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="327" x2="109" y2="321"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="344" x2="101" y2="406"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="405" x2="109" y2="424"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="405" x2="109" y2="387"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="399" x2="117" y2="449"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="85" y1="296" x2="85" y2="327"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="85" y1="296" x2="85" y2="266"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="93" y1="278" x2="93" y2="375"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="300" x2="101" y2="328"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="69" y1="523" x2="69" y2="537"  stroke="red"/>
+<line x1="69" y1="509" x2="69" y2="523"  stroke="red"/>
+<line x1="85" y1="745" x2="85" y2="751"  stroke="red"/>
+<line x1="85" y1="740" x2="85" y2="745"  stroke="red"/>
+<line x1="77" y1="586" x2="77" y2="597"  stroke="red"/>
+<line x1="77" y1="575" x2="77" y2="586"  stroke="red"/>
+<line x1="85" y1="597" x2="85" y2="608"  stroke="red"/>
+<line x1="85" y1="586" x2="85" y2="597"  stroke="red"/>
+<line x1="93" y1="608" x2="93" y2="619"  stroke="red"/>
+<line x1="93" y1="597" x2="93" y2="608"  stroke="red"/>
+<line x1="101" y1="619" x2="101" y2="631"  stroke="red"/>
+<line x1="101" y1="608" x2="101" y2="619"  stroke="red"/>
+<line x1="109" y1="631" x2="109" y2="644"  stroke="red"/>
+<line x1="109" y1="619" x2="109" y2="631"  stroke="red"/>
+<line x1="117" y1="644" x2="117" y2="659"  stroke="red"/>
+<line x1="117" y1="630" x2="117" y2="644"  stroke="red"/>
+<line x1="125" y1="659" x2="125" y2="678"  stroke="red"/>
+<line x1="125" y1="641" x2="125" y2="659"  stroke="red"/>
+<line x1="85" y1="206" x2="85" y2="212"  stroke="cyan"/>
+<line x1="85" y1="201" x2="85" y2="206"  stroke="cyan"/>
+<line x1="69" y1="484" x2="69" y2="492"  stroke="red"/>
+<line x1="69" y1="476" x2="69" y2="484"  stroke="red"/>
+<line x1="77" y1="492" x2="77" y2="498"  stroke="red"/>
+<line x1="77" y1="487" x2="77" y2="492"  stroke="red"/>
+<line x1="61" y1="474" x2="61" y2="484"  stroke="red"/>
+<line x1="61" y1="465" x2="61" y2="474"  stroke="red"/>
+<line x1="69" y1="188" x2="69" y2="198"  stroke="cyan"/>
+<line x1="69" y1="179" x2="69" y2="188"  stroke="green"/>
+<line x1="77" y1="198" x2="77" y2="206"  stroke="cyan"/>
+<line x1="77" y1="190" x2="77" y2="198"  stroke="cyan"/>
+<line x1="53" y1="536" x2="53" y2="598"  stroke="red"/>
+<line x1="53" y1="474" x2="53" y2="536"  stroke="red"/>
+<line x1="61" y1="598" x2="61" y2="674"  stroke="red"/>
+<line x1="61" y1="523" x2="61" y2="598"  stroke="red"/>
+<line x1="69" y1="674" x2="69" y2="763"  stroke="red"/>
+<line x1="69" y1="586" x2="69" y2="674"  stroke="red"/>
+<line x1="77" y1="763" x2="77" y2="781"  stroke="red"/>
+<line x1="77" y1="745" x2="77" y2="763"  stroke="red"/>
+<line x1="85" y1="781" x2="85" y2="800"  stroke="red"/>
+<line x1="85" y1="762" x2="85" y2="781"  stroke="red"/>
+<line x1="93" y1="800" x2="93" y2="822"  stroke="red"/>
+<line x1="93" y1="778" x2="93" y2="800"  stroke="red"/>
+<line x1="101" y1="822" x2="101" y2="850"  stroke="red"/>
+<line x1="101" y1="795" x2="101" y2="822"  stroke="red"/>
+<line x1="109" y1="850" x2="109" y2="889"  stroke="red"/>
+<line x1="109" y1="811" x2="109" y2="850"  stroke="red"/>
+<line x1="117" y1="889" x2="117" y2="936"  stroke="red"/>
+<line x1="117" y1="842" x2="117" y2="889"  stroke="red"/>
+<line x1="125" y1="842" x2="125" y2="857"  stroke="red"/>
+<line x1="125" y1="828" x2="125" y2="842"  stroke="red"/>
+<line x1="133" y1="857" x2="133" y2="870"  stroke="red"/>
+<line x1="133" y1="844" x2="133" y2="857"  stroke="red"/>
+<line x1="141" y1="870" x2="141" y2="880"  stroke="red"/>
+<line x1="141" y1="861" x2="141" y2="870"  stroke="red"/>
+<line x1="149" y1="880" x2="149" y2="888"  stroke="red"/>
+<line x1="149" y1="872" x2="149" y2="880"  stroke="red"/>
+<line x1="157" y1="888" x2="157" y2="894"  stroke="red"/>
+<line x1="157" y1="883" x2="157" y2="888"  stroke="red"/>
+<line x1="93" y1="250" x2="93" y2="256"  stroke="green"/>
+<line x1="93" y1="245" x2="93" y2="250"  stroke="green"/>
+<line x1="45" y1="364" x2="45" y2="536"  stroke="red"/>
+<line x1="45" y1="364" x2="45" y2="191"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="53" y1="192" x2="53" y2="217"  stroke="green"/>
+<line x1="53" y1="192" x2="53" y2="167"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="61" y1="217" x2="61" y2="246"  stroke="green"/>
+<line x1="61" y1="188" x2="61" y2="217"  stroke="green"/>
+<line x1="69" y1="246" x2="69" y2="269"  stroke="green"/>
+<line x1="69" y1="223" x2="69" y2="246"  stroke="green"/>
+<line x1="77" y1="269" x2="77" y2="297"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="77" y1="242" x2="77" y2="269"  stroke="green"/>
+<line x1="85" y1="242" x2="85" y2="250"  stroke="green"/>
+<line x1="85" y1="234" x2="85" y2="242"  stroke="green"/>
+<line x1="85" y1="143" x2="85" y2="151"  stroke="blue"/>
+<line x1="85" y1="135" x2="85" y2="143"  stroke="blue"/>
+<line x1="93" y1="151" x2="93" y2="157"  stroke="blue"/>
+<line x1="93" y1="146" x2="93" y2="151"  stroke="blue"/>
+<line x1="21" y1="86" x2="21" y2="138"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="21" y1="86" x2="21" y2="35"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="29" y1="137" x2="29" y2="223"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="29" y1="137" x2="29" y2="51"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="37" y1="222" x2="37" y2="365"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="37" y1="80" x2="37" y2="222"  stroke="blue"/>
+<line x1="45" y1="80" x2="45" y2="92"  stroke="blue"/>
+<line x1="45" y1="69" x2="45" y2="80"  stroke="blue"/>
+<line x1="53" y1="92" x2="53" y2="104"  stroke="blue"/>
+<line x1="53" y1="80" x2="53" y2="92"  stroke="blue"/>
+<line x1="61" y1="104" x2="61" y2="117"  stroke="blue"/>
+<line x1="61" y1="91" x2="61" y2="104"  stroke="blue"/>
+<line x1="69" y1="102" x2="69" y2="133"  stroke="blue"/>
+<line x1="77" y1="133" x2="77" y2="143"  stroke="blue"/>
+<line x1="77" y1="133" x2="77" y2="123"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="13" y1="55" x2="13" y2="87"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="13" y1="55" x2="13" y2="24"  stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="37" y1="52" x2="29" y2="52" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="149" y1="668" x2="141" y2="668" stroke="red"/>
+<line x1="141" y1="844" x2="133" y2="844" stroke="red"/>
+<line x1="85" y1="525" x2="77" y2="525" stroke="red"/>
+<line x1="117" y1="811" x2="109" y2="811" stroke="red"/>
+<line x1="101" y1="778" x2="93" y2="778" stroke="red"/>
+<line x1="181" y1="976" x2="173" y2="976" stroke="red"/>
+<line x1="141" y1="926" x2="133" y2="926" stroke="red"/>
+<line x1="149" y1="937" x2="141" y2="937" stroke="red"/>
+<line x1="157" y1="948" x2="149" y2="948" stroke="red"/>
+<line x1="165" y1="958" x2="157" y2="958" stroke="red"/>
+<line x1="173" y1="968" x2="165" y2="968" stroke="red"/>
+<line x1="141" y1="660" x2="133" y2="660" stroke="red"/>
+<line x1="109" y1="363" x2="101" y2="363" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="371" x2="109" y2="371" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="77" y1="537" x2="69" y2="537" stroke="red"/>
+<line x1="85" y1="550" x2="77" y2="550" stroke="red"/>
+<line x1="93" y1="558" x2="85" y2="558" stroke="red"/>
+<line x1="157" y1="1020" x2="149" y2="1020" stroke="red"/>
+<line x1="165" y1="1053" x2="157" y2="1053" stroke="red"/>
+<line x1="125" y1="936" x2="117" y2="936" stroke="red"/>
+<line x1="133" y1="967" x2="125" y2="967" stroke="red"/>
+<line x1="141" y1="1008" x2="133" y2="1008" stroke="red"/>
+<line x1="149" y1="1024" x2="141" y2="1024" stroke="red"/>
+<line x1="157" y1="1045" x2="149" y2="1045" stroke="red"/>
+<line x1="133" y1="678" x2="125" y2="678" stroke="red"/>
+<line x1="141" y1="697" x2="133" y2="697" stroke="red"/>
+<line x1="149" y1="709" x2="141" y2="709" stroke="red"/>
+<line x1="157" y1="723" x2="149" y2="723" stroke="red"/>
+<line x1="125" y1="426" x2="117" y2="426" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="448" x2="117" y2="448" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="327" x2="101" y2="327" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="374" x2="93" y2="374" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="405" x2="101" y2="405" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="423" x2="109" y2="423" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="85" y1="296" x2="77" y2="296" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="93" y1="326" x2="85" y2="326" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="313" x2="93" y2="313" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="69" y1="523" x2="61" y2="523" stroke="red"/>
+<line x1="85" y1="745" x2="77" y2="745" stroke="red"/>
+<line x1="77" y1="586" x2="69" y2="586" stroke="red"/>
+<line x1="85" y1="597" x2="77" y2="597" stroke="red"/>
+<line x1="93" y1="608" x2="85" y2="608" stroke="red"/>
+<line x1="101" y1="619" x2="93" y2="619" stroke="red"/>
+<line x1="109" y1="631" x2="101" y2="631" stroke="red"/>
+<line x1="117" y1="644" x2="109" y2="644" stroke="red"/>
+<line x1="125" y1="659" x2="117" y2="659" stroke="red"/>
+<line x1="85" y1="206" x2="77" y2="206" stroke="cyan"/>
+<line x1="69" y1="484" x2="61" y2="484" stroke="red"/>
+<line x1="77" y1="492" x2="69" y2="492" stroke="red"/>
+<line x1="61" y1="474" x2="53" y2="474" stroke="red"/>
+<line x1="69" y1="188" x2="61" y2="188" stroke="green"/>
+<line x1="77" y1="198" x2="69" y2="198" stroke="cyan"/>
+<line x1="53" y1="536" x2="45" y2="536" stroke="red"/>
+<line x1="61" y1="598" x2="53" y2="598" stroke="red"/>
+<line x1="69" y1="674" x2="61" y2="674" stroke="red"/>
+<line x1="77" y1="763" x2="69" y2="763" stroke="red"/>
+<line x1="85" y1="781" x2="77" y2="781" stroke="red"/>
+<line x1="93" y1="800" x2="85" y2="800" stroke="red"/>
+<line x1="101" y1="822" x2="93" y2="822" stroke="red"/>
+<line x1="109" y1="850" x2="101" y2="850" stroke="red"/>
+<line x1="117" y1="889" x2="109" y2="889" stroke="red"/>
+<line x1="125" y1="842" x2="117" y2="842" stroke="red"/>
+<line x1="133" y1="857" x2="125" y2="857" stroke="red"/>
+<line x1="141" y1="870" x2="133" y2="870" stroke="red"/>
+<line x1="149" y1="880" x2="141" y2="880" stroke="red"/>
+<line x1="157" y1="888" x2="149" y2="888" stroke="red"/>
+<line x1="93" y1="250" x2="85" y2="250" stroke="green"/>
+<line x1="45" y1="364" x2="37" y2="364" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="53" y1="192" x2="45" y2="192" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="61" y1="217" x2="53" y2="217" stroke="green"/>
+<line x1="69" y1="246" x2="61" y2="246" stroke="green"/>
+<line x1="77" y1="269" x2="69" y2="269" stroke="green"/>
+<line x1="85" y1="242" x2="77" y2="242" stroke="green"/>
+<line x1="85" y1="143" x2="77" y2="143" stroke="blue"/>
+<line x1="93" y1="151" x2="85" y2="151" stroke="blue"/>
+<line x1="21" y1="86" x2="13" y2="86" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="29" y1="137" x2="21" y2="137" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="37" y1="222" x2="29" y2="222" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="45" y1="80" x2="37" y2="80" stroke="blue"/>
+<line x1="53" y1="92" x2="45" y2="92" stroke="blue"/>
+<line x1="61" y1="104" x2="53" y2="104" stroke="blue"/>
+<line x1="69" y1="117" x2="61" y2="117" stroke="blue"/>
+<line x1="77" y1="133" x2="69" y2="133" stroke="blue"/>
+<line x1="13" y1="55" x2="5" y2="55" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="29" y1="36" x2="21" y2="36" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="45" y1="47" x2="37" y2="47" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="21" y1="25" x2="13" y2="25" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="45" y1="58" x2="37" y2="58" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="133" y1="421" x2="125" y2="421" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="157" y1="663" x2="149" y2="663" stroke="red"/>
+<line x1="157" y1="674" x2="149" y2="674" stroke="red"/>
+<line x1="157" y1="696" x2="149" y2="696" stroke="red"/>
+<line x1="165" y1="718" x2="157" y2="718" stroke="red"/>
+<line x1="157" y1="707" x2="149" y2="707" stroke="red"/>
+<line x1="149" y1="685" x2="141" y2="685" stroke="red"/>
+<line x1="149" y1="861" x2="141" y2="861" stroke="red"/>
+<line x1="149" y1="839" x2="141" y2="839" stroke="red"/>
+<line x1="149" y1="850" x2="141" y2="850" stroke="red"/>
+<line x1="165" y1="938" x2="157" y2="938" stroke="red"/>
+<line x1="157" y1="927" x2="149" y2="927" stroke="red"/>
+<line x1="149" y1="916" x2="141" y2="916" stroke="red"/>
+<line x1="173" y1="949" x2="165" y2="949" stroke="red"/>
+<line x1="109" y1="773" x2="101" y2="773" stroke="red"/>
+<line x1="93" y1="520" x2="85" y2="520" stroke="red"/>
+<line x1="109" y1="795" x2="101" y2="795" stroke="red"/>
+<line x1="133" y1="905" x2="125" y2="905" stroke="red"/>
+<line x1="133" y1="828" x2="125" y2="828" stroke="red"/>
+<line x1="93" y1="542" x2="85" y2="542" stroke="red"/>
+<line x1="93" y1="531" x2="85" y2="531" stroke="red"/>
+<line x1="101" y1="553" x2="93" y2="553" stroke="red"/>
+<line x1="125" y1="806" x2="117" y2="806" stroke="red"/>
+<line x1="125" y1="817" x2="117" y2="817" stroke="red"/>
+<line x1="109" y1="784" x2="101" y2="784" stroke="red"/>
+<line x1="157" y1="1004" x2="149" y2="1004" stroke="red"/>
+<line x1="189" y1="971" x2="181" y2="971" stroke="red"/>
+<line x1="189" y1="982" x2="181" y2="982" stroke="red"/>
+<line x1="181" y1="960" x2="173" y2="960" stroke="red"/>
+<line x1="173" y1="1048" x2="165" y2="1048" stroke="red"/>
+<line x1="149" y1="993" x2="141" y2="993" stroke="red"/>
+<line x1="165" y1="1015" x2="157" y2="1015" stroke="red"/>
+<line x1="149" y1="652" x2="141" y2="652" stroke="red"/>
+<line x1="109" y1="344" x2="101" y2="344" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="366" x2="117" y2="366" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="355" x2="109" y2="355" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="377" x2="117" y2="377" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="619" x2="109" y2="619" stroke="red"/>
+<line x1="101" y1="564" x2="93" y2="564" stroke="red"/>
+<line x1="125" y1="630" x2="117" y2="630" stroke="red"/>
+<line x1="165" y1="1026" x2="157" y2="1026" stroke="red"/>
+<line x1="173" y1="1059" x2="165" y2="1059" stroke="red"/>
+<line x1="165" y1="1037" x2="157" y2="1037" stroke="red"/>
+<line x1="93" y1="586" x2="85" y2="586" stroke="red"/>
+<line x1="85" y1="487" x2="77" y2="487" stroke="red"/>
+<line x1="165" y1="729" x2="157" y2="729" stroke="red"/>
+<line x1="133" y1="432" x2="125" y2="432" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="399" x2="117" y2="399" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="133" y1="443" x2="125" y2="443" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="93" y1="740" x2="85" y2="740" stroke="red"/>
+<line x1="109" y1="300" x2="101" y2="300" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="322" x2="109" y2="322" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="278" x2="93" y2="278" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="388" x2="109" y2="388" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="133" y1="454" x2="125" y2="454" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="93" y1="267" x2="85" y2="267" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="117" y1="333" x2="109" y2="333" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="125" y1="410" x2="117" y2="410" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="101" y1="289" x2="93" y2="289" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="109" y1="311" x2="101" y2="311" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="85" y1="575" x2="77" y2="575" stroke="red"/>
+<line x1="77" y1="509" x2="69" y2="509" stroke="red"/>
+<line x1="93" y1="751" x2="85" y2="751" stroke="red"/>
+<line x1="93" y1="762" x2="85" y2="762" stroke="red"/>
+<line x1="109" y1="608" x2="101" y2="608" stroke="red"/>
+<line x1="101" y1="597" x2="93" y2="597" stroke="red"/>
+<line x1="77" y1="179" x2="69" y2="179" stroke="green"/>
+<line x1="157" y1="872" x2="149" y2="872" stroke="red"/>
+<line x1="133" y1="641" x2="125" y2="641" stroke="red"/>
+<line x1="93" y1="201" x2="85" y2="201" stroke="cyan"/>
+<line x1="93" y1="212" x2="85" y2="212" stroke="cyan"/>
+<line x1="77" y1="476" x2="69" y2="476" stroke="red"/>
+<line x1="85" y1="498" x2="77" y2="498" stroke="red"/>
+<line x1="69" y1="465" x2="61" y2="465" stroke="red"/>
+<line x1="77" y1="223" x2="69" y2="223" stroke="green"/>
+<line x1="85" y1="190" x2="77" y2="190" stroke="cyan"/>
+<line x1="101" y1="146" x2="93" y2="146" stroke="blue"/>
+<line x1="69" y1="91" x2="61" y2="91" stroke="blue"/>
+<line x1="61" y1="80" x2="53" y2="80" stroke="blue"/>
+<line x1="77" y1="102" x2="69" y2="102" stroke="blue"/>
+<line x1="93" y1="135" x2="85" y2="135" stroke="blue"/>
+<line x1="53" y1="69" x2="45" y2="69" stroke="blue"/>
+<line x1="61" y1="168" x2="53" y2="168" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="165" y1="883" x2="157" y2="883" stroke="red"/>
+<line x1="165" y1="894" x2="157" y2="894" stroke="red"/>
+<line x1="101" y1="245" x2="93" y2="245" stroke="green"/>
+<line x1="101" y1="256" x2="93" y2="256" stroke="green"/>
+<line x1="93" y1="234" x2="85" y2="234" stroke="green"/>
+<line x1="101" y1="157" x2="93" y2="157" stroke="blue"/>
+<line x1="77" y1="113" x2="69" y2="113" stroke="rgb(0,0,0)" stroke-width="2"/>
+<line x1="85" y1="124" x2="77" y2="124" stroke="rgb(0,0,0)" stroke-width="2"/>
+<defs>
+    <filter x="0" y="0" width="1" height="1" id="solid">
+      <feFlood flood-color="white"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+<text x="35" y="37" style="stroke:rgb(0,0,0)" stroke-width="1">Diplopterygium_bancroftii</text>
+<text x="51" y="48" style="stroke:rgb(0,0,0)" stroke-width="1">Dipteris_conjugata</text>
+<text x="27" y="26" style="stroke:rgb(0,0,0)" stroke-width="1">Gleichenella_pectinata</text>
+<text x="51" y="59" style="stroke:rgb(0,0,0)" stroke-width="1">Matonia_pectinata</text>
+<text x="139" y="422" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_hoskingii_tabulatus</text>
+<text x="163" y="664" style="stroke:red" stroke-width="1">Todea_papuana</text>
+<text x="163" y="675" style="stroke:red" stroke-width="1">Todea_barbara</text>
+<text x="163" y="697" style="stroke:red" stroke-width="1">Leptopteris_superba</text>
+<text x="171" y="719" style="stroke:red" stroke-width="1">Leptopteris_wilkesiana</text>
+<text x="163" y="708" style="stroke:red" stroke-width="1">Leptopteris_hymenophylloides</text>
+<text x="155" y="686" style="stroke:red" stroke-width="1">Leptopteris_fraseri</text>
+<text x="155" y="862" style="stroke:red" stroke-width="1">Osmunda_regalis</text>
+<text x="155" y="840" style="stroke:red" stroke-width="1">Osmunda_lancea</text>
+<text x="155" y="851" style="stroke:red" stroke-width="1">Osmunda_japonica</text>
+<text x="171" y="939" style="stroke:red" stroke-width="1">Plenasium_vachellii</text>
+<text x="163" y="928" style="stroke:red" stroke-width="1">Plenasium_javanica</text>
+<text x="155" y="917" style="stroke:red" stroke-width="1">Plenasium_bromeliifolia</text>
+<text x="179" y="950" style="stroke:red" stroke-width="1">Plenasium_banksiifolia</text>
+<text x="115" y="774" style="stroke:red" stroke-width="1">Claytosmunda_claytoniana</text>
+<text x="99" y="521" style="stroke:red" stroke-width="1">Osmundastrum_cinnamomea</text>
+<text x="115" y="796" style="stroke:red" stroke-width="1">Claytosmunda_wehrii</text>
+<text x="139" y="906" style="stroke:red" stroke-width="1">Osmunda_shimokawaensis</text>
+<text x="139" y="829" style="stroke:red" stroke-width="1">Osmunda_iliaensis</text>
+<text x="99" y="543" style="stroke:red" stroke-width="1">Osmundastrum_cinnamomea_NeogeneJapan</text>
+<text x="99" y="532" style="stroke:red" stroke-width="1">Osmundastrum_cinnamomea_NeogeneUSA</text>
+<text x="107" y="554" style="stroke:red" stroke-width="1">Osmundastrum_precinnamomea</text>
+<text x="131" y="807" style="stroke:red" stroke-width="1">Osmunda_pluma</text>
+<text x="131" y="818" style="stroke:red" stroke-width="1">Osmunda_oregonensis</text>
+<text x="115" y="785" style="stroke:red" stroke-width="1">Claytosmunda_nathorstii</text>
+<text x="163" y="1005" style="stroke:red" stroke-width="1">Plenasium_chandleri</text>
+<text x="195" y="972" style="stroke:red" stroke-width="1">Plenasium_dowkeri_Chandler</text>
+<text x="195" y="983" style="stroke:red" stroke-width="1">Plenasium_dowkeri_Miller</text>
+<text x="187" y="961" style="stroke:red" stroke-width="1">Plenasium_arnoldii</text>
+<text x="179" y="1049" style="stroke:red" stroke-width="1">Plenasium_crossii</text>
+<text x="155" y="994" style="stroke:red" stroke-width="1">Plenasium_moorei</text>
+<text x="171" y="1016" style="stroke:red" stroke-width="1">Plenasium_bransonii</text>
+<text x="155" y="653" style="stroke:red" stroke-width="1">Todea_tidwellii</text>
+<text x="115" y="345" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_whittlesii</text>
+<text x="131" y="367" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_skidegatensis</text>
+<text x="123" y="356" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_natalensis</text>
+<text x="131" y="378" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_atherstonei</text>
+<text x="123" y="620" style="stroke:red" stroke-width="1">Osmunda_kidstonii</text>
+<text x="107" y="565" style="stroke:red" stroke-width="1">Osmundastrum_cinnamomea_CretaceousCanada</text>
+<text x="131" y="631" style="stroke:red" stroke-width="1">Claytosmunda_embreei</text>
+<text x="171" y="1027" style="stroke:red" stroke-width="1">Plenasium_nebraskensis</text>
+<text x="179" y="1060" style="stroke:red" stroke-width="1">Plenasium_dakotensis</text>
+<text x="171" y="1038" style="stroke:red" stroke-width="1">Plenasium_burgii</text>
+<text x="99" y="587" style="stroke:red" stroke-width="1">Claytosmunda_tekelili</text>
+<text x="91" y="488" style="stroke:red" stroke-width="1">Millerocaulis_kolbei</text>
+<text x="171" y="730" style="stroke:red" stroke-width="1">Leptoperis_estipularis</text>
+<text x="139" y="433" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_zululandensis</text>
+<text x="131" y="400" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_tidwellii</text>
+<text x="139" y="444" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_bamfordiae</text>
+<text x="99" y="741" style="stroke:red" stroke-width="1">Claytosmunda_johnstonii</text>
+<text x="115" y="301" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_tasmanensis</text>
+<text x="123" y="323" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_richmondii</text>
+<text x="107" y="279" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_pruchnickii</text>
+<text x="123" y="389" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_nerii</text>
+<text x="139" y="455" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_lemonii</text>
+<text x="99" y="268" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_jonesii</text>
+<text x="123" y="334" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_janae</text>
+<text x="131" y="411" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_hoskingii_var.hoskingii</text>
+<text x="107" y="290" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_griggsii</text>
+<text x="115" y="312" style="stroke:rgb(0,0,0)" stroke-width="1">Osmundacaulis_andrewii</text>
+<text x="91" y="576" style="stroke:red" stroke-width="1">Claytosmunda_plumites</text>
+<text x="83" y="510" style="stroke:red" stroke-width="1">Osmundastrum_pulchella</text>
+<text x="99" y="752" style="stroke:red" stroke-width="1">Claytosmunda_liaoningensis</text>
+<text x="99" y="763" style="stroke:red" stroke-width="1">Claytosmunda_chengii</text>
+<text x="115" y="609" style="stroke:red" stroke-width="1">Claytosmunda_sinica</text>
+<text x="107" y="598" style="stroke:red" stroke-width="1">Claytosmunda_preosmunda</text>
+<text x="83" y="180" style="stroke:green" stroke-width="1">Lunea_jonesii</text>
+<text x="163" y="873" style="stroke:red" stroke-width="1">Millerocaulis_stipabonettiorum</text>
+<text x="139" y="642" style="stroke:red" stroke-width="1">Osmundastrum_indentata</text>
+<text x="99" y="202" style="stroke:cyan" stroke-width="1">Itopsidema_vancleavei</text>
+<text x="99" y="213" style="stroke:cyan" stroke-width="1">Donwelliacaulis_chlouberii</text>
+<text x="83" y="477" style="stroke:red" stroke-width="1">Millerocaulis_lutziae</text>
+<text x="91" y="499" style="stroke:red" stroke-width="1">Millerocaulis_herbstii</text>
+<text x="75" y="466" style="stroke:red" stroke-width="1">Claytosmunda_beardmorensis</text>
+<text x="83" y="224" style="stroke:green" stroke-width="1">Zhongmingella_plenasioides</text>
+<text x="91" y="191" style="stroke:cyan" stroke-width="1">Tiania_yunnanensis</text>
+<text x="107" y="147" style="stroke:blue" stroke-width="1">Thamnopteris_splendida</text>
+<text x="75" y="92" style="stroke:blue" stroke-width="1">Thamnopteris_schlechtendalii</text>
+<text x="67" y="81" style="stroke:blue" stroke-width="1">Thamnopteris_kidstonii</text>
+<text x="83" y="103" style="stroke:blue" stroke-width="1">Thamnopteris_kazanensis</text>
+<text x="99" y="136" style="stroke:blue" stroke-width="1">Thamnopteris_javorskii</text>
+<text x="59" y="70" style="stroke:blue" stroke-width="1">Thamnopteris_gracilis</text>
+<text x="67" y="169" style="stroke:rgb(0,0,0)" stroke-width="1">Shuichengella_primitiva</text>
+<text x="171" y="884" style="stroke:red" stroke-width="1">Palaeosmunda_williamsii</text>
+<text x="171" y="895" style="stroke:red" stroke-width="1">Palaeosmunda_playfordii</text>
+<text x="107" y="246" style="stroke:green" stroke-width="1">Guairea_millerii</text>
+<text x="107" y="257" style="stroke:green" stroke-width="1">Guairea_carnierii</text>
+<text x="99" y="235" style="stroke:green" stroke-width="1">Guairea_brasiliensis</text>
+<text x="107" y="158" style="stroke:blue" stroke-width="1">Chasmatopteris_principalis</text>
+<text x="83" y="114" style="stroke:rgb(0,0,0)" stroke-width="1">Bathypteris_rhomboidea</text>
+<text x="91" y="125" style="stroke:rgb(0,0,0)" stroke-width="1">Anomorrhoea_fischeri</text>
+</g>
+<g stroke-width="2" stroke="black" font-family="Verdana" font-style="regular" font-size="5">
+</g>
+</svg>

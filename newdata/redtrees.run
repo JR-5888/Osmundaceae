@@ -1,4 +1,5 @@
-macro = ; 
+macro = ;
+var : contador tname tname_string altura resizefactor resized ;
 	/*	Just to get all the reduced consensus trees */
 
 
@@ -15,7 +16,7 @@ p ew_nodep.tre ;
 pcrprune . /\ >0 ;
 pruntax ./{0} ;
 ne * ;
-tch / ; tgroup =0 (ew_nodep_red) 0 ; tv > ;
+tch / ; tgroup =0 (ew_nodep_reduced_consensus) 0 ; tv > ;
 
 k0 ;
 
@@ -23,28 +24,55 @@ p ew_dep.tre ;
 pcrprune . /\ >1 ;
 pruntax ./{1} ;
 ne * ;
-tch / ; tgroup =1 (ew_dep_red) 0 ; tv > ;
+tch / ; tgroup =1 (ew_dep_reduced_consensus) 0 ; tv > ;
 
+/*
+set contador[0] 3;
+set contador[1] 7;
+set contador[2] 11;
+set contador[3] 15;
+*/
+
+set contador 3 ;
 loop 5+5 15
 	k0 ;
-	
+	set tname (#1- 'contador') ;
+	set tname_string $xpi#1_dep_reduced_consensus;
 	p xpi#1_dep.tre ;
 	pcrprune ./\ >#1 ;
 	pruntax ./{#1} ;
 	ne * ;
-	tch / ; tgroup =#1 0 ; tv > ; 
+	tch / ; tgroup ='tname' ($tname_string) 0 ; tv > ; 
 	
+	set contador += 4 ;
 	stop
 
 k0 ; 
 
+
+set tname 5;
+set tname_string $xpi20_dep_reduced_consensus;
 p xpi20_dep.tre;
-tgroup =20 0 ;
+tgroup ='tname' ($tname_string) 0 ;
 tv > / ; 
 
 k0 ; 
 tv < ; 
 tgr; 
+
+loop 0 ntrees
+	ttag - ;
+	taxonomy :#1  =Osmundoideae =Thamnopteroideae =Guaireoideae =Itopsidemoideae ;
+	
+	set altura tsize[#1] ;
+	set resized (13 - (('altura' / (135-81)) * 1)) ;
+
+	quote resized '/.0resized' ;
+
+	ttag &FigS1_#1..svg blength 7 bheight '/.0resized' thickness 2 fontsize 5 colors caption $tgroup #1;
+	
+	stop
+
 macro - ;
 tgr / ;
 p/;
